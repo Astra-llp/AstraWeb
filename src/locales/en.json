@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "brand": "Astra Medical",
+    "brandFull": "Astra Medical Center & Diagnostics",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "team": "Our Team",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
+    "instructions": "Patient Instructions",
+    "bookNow": "Contact Us",
+    "callSupport": "Call Support"
+  },
+  "motto": {
+    "text": "Empowering Patients, Empowering Lives",
+    "cta": "Get Medical Help Now"
+  },
+  "hero": {
+    "badge": "World-Class Medical Excellence",
+    "title1": "Redefining",
+    "title2": "Clinical Healthcare",
+    "subtitle": "Combining advanced diagnostics, specialist diabetology, and comprehensive clinical care. Driven by technology, delivered with compassion.",
+    "ctaEmergency": "Emergency Consultation",
+    "ctaServices": "Explore Our Services",
+    "experience": "16+ Years Experience",
+    "expertCare": "Expert Diabetology & GP"
+  },
+  "stats": {
+    "patients": "Patients Cared For",
+    "experience": "Years Expert Care",
+    "accuracy": "Diagnostic Accuracy",
+    "doctors": "Specialist Panels"
+  },
+  "doctor": {
+    "title": "Clinical Spotlight",
+    "name": "Dr. Rajesh Wilson",
+    "role": "Consultant Diabetologist & General Practitioner",
+    "experience": "16 Years of Dedicated Experience",
+    "qualifications": "MBBS, MD., FiCPH (USA)., FIDM (U.K).",
+    "bio": "A globally certified specialist in Diabetes Management and General Medicine, dedicated to providing precision-driven diagnostic insights and personalized patient care protocols.",
+    "credentials": {
+      "usa": "Fellow of the International College of Primary Care Physicians (USA)",
+      "uk": "Fellow in Diabetes Mellitus (United Kingdom)",
+      "md": "Doctor of Medicine in General Practitioner Services"
+    },
+    "viewProfile": "View Expert Profile"
+  },
+  "services": {
+    "title": "Comprehensive Medical Services",
+    "subtitle": "Advanced diagnostics, precision diabetes therapies, and high-fidelity laboratory screening protocols designed for your family's longevity.",
+    "viewAll": "Explore Services",
+    "close": "Close Details",
+    "bookService": "Inquire Now",
+    "items": {
+      "diabetes": {
+        "title": "Diabetes Care",
+        "desc": "Advanced specialist clinics for Type 1 & 2 Diabetes, Gestational Diabetes, and custom lifestyle insulin therapies.",
+        "full": "Our advanced Diabetes Care clinic, led by Dr. Rajesh Wilson (Fellow in Diabetes Mellitus, UK), specializes in high-precision glucose monitoring, custom metabolic counseling, prevention of microvascular complications (neuropathy, nephropathy, retinopathy), insulin pump therapy, and comprehensive diabetic foot assessments."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "desc": "High-fidelity clinical imaging, ultrasound, ECG, cardiovascular screen, and metabolic diagnostics.",
+        "full": "Equipped with state-of-the-art ultrasound, multi-channel ECG, and digital diagnostic setups, our imaging facility provides absolute clarity for immediate, actionable therapeutic intervention. Every scan is analyzed by credentialed clinical specialists."
+      },
+      "consultation": {
+        "title": "General Consultation",
+        "desc": "Primary clinical assessment, general family practitioner consultation, and preventive medicine care.",
+        "full": "Dr. Rajesh Wilson provides primary assessment, management of acute systemic infections, chronic respiratory disorders, hypertensive crises, and general health optimization protocols. Your first step toward long-term wellness."
+      },
+      "laboratory": {
+        "title": "Laboratory Services",
+        "desc": "24/7 fully automated clinical biochemistry, pathology, hematology, and serology analysis.",
+        "full": "Astra Labs runs high-throughput automated analyzers delivering ultra-rapid biochemical profiles, lipid levels, thyroid panels, hormone assays, and systemic pathogen screening. Fully compliant with premium international laboratory quality standards."
+      },
+      "preventive": {
+        "title": "Preventive Care",
+        "desc": "Vitals tracking, genetic cardiovascular profiling, and custom metabolic defense plans.",
+        "full": "True healthcare lies in prevention. We curate custom risk-profile programs incorporating full metabolic screening, nutrition dynamics, stress management, and immunizations to safeguard against chronic disease before it begins."
+      },
+      "checkups": {
+        "title": "Health Checkups",
+        "desc": "Executive, corporate, senior citizen, and pediatric premium health screening packages.",
+        "full": "We offer tiered health checkup packages (Executive, Gold, Pediatric, Senior Citizen) containing full liver/kidney profiles, lipid screenings, blood counts, chest X-rays, and comprehensive medical doctor debriefings."
+      },
+      "emergency": {
+        "title": "Emergency Consultation",
+        "desc": "Immediate critical care support, triage protocols, and hyper-acute medical consultations.",
+        "full": "For sudden acute crises, high fevers, diabetic ketoacidosis, hyperosmolar states, and acute chest discomfort, our team provides urgent triage, stabilization, and immediate diagnostic processing."
+      }
+    }
+  },
+  "about": {
+    "title": "Defining Healthcare Standards",
+    "subtitle": "Astra Medical Center & Diagnostics stands at the interface of cutting-edge technology and human-centric medical practice.",
+    "intro": "Established as a beacon of clinical excellence, Astra Medical Center serves as a trusted healthcare partner. Under the expert guidance of Dr. Rajesh Wilson, our diagnostic and clinical departments are built around high-fidelity, peer-reviewed international protocols, ensuring that every patient receives professional attention.",
+    "missionTitle": "Our Mission",
+    "mission": "To provide high-precision diagnostics and top-tier personalized healthcare, empowering patient lives through accurate science and dedicated medicine.",
+    "visionTitle": "Our Vision",
+    "vision": "To become a gold standard in integrated clinical care and diagnostics, recognized for premium diagnostics, compassionate patient care, and expert clinical management.",
+    "whyUsTitle": "Why Trusted Patients Choose Astra",
+    "timelineTitle": "Our Scientific Journey",
+    "milestones": [
+      {
+        "year": "2010",
+        "title": "Inception of Excellence",
+        "desc": "Dr. Rajesh Wilson initiates specialist diabetes services and general practice clinics."
+      },
+      {
+        "year": "2015",
+        "title": "Diagnostic Automation",
+        "desc": "Integrating high-throughput automated laboratory services, dramatically reducing processing time."
+      },
+      {
+        "year": "2020",
+        "title": "Specialist Diabetology Fellowship",
+        "desc": "Incorporation of global USA and UK primary care protocols into the core medical system."
+      },
+      {
+        "year": "2026",
+        "title": "Modern Expansion",
+        "desc": "Launching an elegant digital ecosystem and expanding advanced diagnostics and cardiovascular checkup lines."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Connect With Astra",
+    "subtitle": "Reach out to our clinical coordinators. Schedule your consultations seamlessly.",
+    "formTitle": "Secure Consultation Request",
+    "formName": "Full Name",
+    "formEmail": "Email Address",
+    "formPhone": "Phone Number",
+    "formService": "Select Clinical Department",
+    "formMsg": "Message / Clinical History",
+    "formSubmit": "Submit Inquiry",
+    "formSending": "Verifying & Transmitting...",
+    "formSuccess": "Your inquiry has been successfully transmitted. A clinical coordinator will contact you shortly.",
+    "formError": "An error occurred. Please call our support lines directly.",
+    "cardPhone": "Direct Contact Lines",
+    "cardEmail": "Electronic Correspondence",
+    "cardAddress": "Physical Location",
+    "addressValue": "Astra Medical Center, Prime Healthcare Hub, Suite 101, India",
+    "hours": "Operating Hours",
+    "hoursWeekdays": "Monday - Saturday: 8:00 AM - 9:00 PM",
+    "hoursSunday": "Sunday: Emergency Diagnostics Only"
+  },
+  "instructions": {
+    "title": "Patient Instructions & FAQ",
+    "subtitle": "Key medical protocols, pre-test guidelines, and clinical advisory lists to ensure accurate diagnostic values.",
+    "guidelinesTitle": "Essential Pre-Test Guidelines",
+    "guideline1": "Fasting Blood Sugar (FBS): Requires exactly 8-10 hours of overnight water-only fasting before blood draw.",
+    "guideline2": "Lipid Profile Screen: Requires 12 hours of absolute fasting. Strictly avoid alcohol or high-fat meals 24 hours prior.",
+    "guideline3": "Ultrasound Abdomen: Drink 4-6 glasses of water 1 hour prior to scan; do not void urine. Keep full bladder.",
+    "guideline4": "Thyroid Profile: Take routine thyroid medication only AFTER the blood draw, unless advised otherwise by Dr. Wilson.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "q": "How can I consult with Dr. Rajesh Wilson?",
+        "a": "You can reach out to us using our digital contact form, or call our direct support lines at 8089233554 or 7092030885 for immediate assistance."
+      },
+      {
+        "q": "How long does it take to receive automated lab reports?",
+        "a": "Basic blood, lipid, and diabetic screens are processed within 2-4 hours. Special assays and viral panels may take up to 24 hours."
+      },
+      {
+        "q": "Are diagnostics covered by medical insurances?",
+        "a": "Yes, Astra Medical Center works with major insurance providers. Please present your insurance card at the front desk."
+      },
+      {
+        "q": "Do you offer emergency home sample collection?",
+        "a": "Absolutely. For geriatric or fragile patients in local vicinities, our fully equipped mobile phlebotomy team can collect blood and urine samples directly from home."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Astra Clinical Gallery",
+    "subtitle": "A visual showcase of our state-of-the-art diagnostic facilities, clinical suites, and patient relaxation lounges.",
+    "filterAll": "All Views",
+    "filterDiagnostics": "Diagnostics",
+    "filterLabs": "Laboratory",
+    "filterSuites": "Clinical Suites",
+    "hoverZoom": "Expand Image View"
+  }
+}
