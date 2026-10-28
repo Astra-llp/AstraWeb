@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { HeartPulse, Award, ChevronRight, Stethoscope, ShieldCheck, Star } from 'lucide-react';
+import { HeartPulse, Award, ChevronRight, ChevronLeft, Stethoscope, ShieldCheck, Star, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Custom useInView hook for performant scroll triggering without third-party dependencies
@@ -74,17 +74,56 @@ export const Home: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const testimonials = [
-    { name: "Suresh Kumar", rating: 5, text: "Dr. Rajesh Wilson's diabetes management completely transformed my life. My HbA1c went from 9.2 to 6.1 in months!", tag: "Diabetes Care" },
-    { name: "Fathima Hameed", rating: 5, text: "Astra Diagnostics is incredibly rapid. I received my thyroid and lipid reports within 3 hours. Pristine and automated!", tag: "Laboratory" },
-    { name: "Dr. Anirudh Mehta", rating: 5, text: "As a doctor myself, I refer my patients to Astra for ultrasound and metabolic screening. Their precision and reports are state-of-the-art.", tag: "Diagnostics" }
+    {
+      name: "Arun Kumar",
+      rating: 5,
+      meta: "5 reviews · 8 months ago",
+      text: "Astra Medical Center & Diagnostics offers Excellent treatment and patients friendly I had a good experience  and The doctors were professional and explained everything clearly about the treatment and the nursing staff were kind, supportive, and attentive throughout my stay. The hospital was clean and well maintained. Overall, I felt safe and well cared.",
+      tag: "Google Review"
+    },
+    {
+      name: "Dr Bikie John",
+      rating: 5,
+      meta: "3 reviews · 2 photos · a year ago",
+      text: "I had a truly wonderful experience with Aster medical center & diagnostic which is highlighted with professional, friendly, and efficient staff, minimal wait times, a clean and comfortable environment, and thorough knowledgeable doctors.",
+      ownerResponse: "Thank you madam",
+      ownerResponseDate: "a year ago",
+      tag: "Google Review"
+    },
+    {
+      name: "Mukesh V. D",
+      rating: 5,
+      meta: "2 reviews · 2 months ago",
+      text: "Dr Rajesh Wilson is an amazing doctor. The staff are also very warm and hospitable. The services are excellent and good.",
+      tag: "Google Review"
+    },
+    {
+      name: "SREESHMA TP",
+      rating: 5,
+      meta: "3 reviews · 6 months ago",
+      text: "Now i experienced there all staff nurse and doctor very good service for me now my health condition is well ok.",
+      ownerResponse: "Thanks a lot Sreshma madam.",
+      ownerResponseDate: "6 months ago",
+      tag: "Google Review"
+    },
+    {
+      name: "Vishnu Cu",
+      rating: 5,
+      meta: "1 review · 1 photo · a year ago",
+      text: "Very good hospitality of Astra clinic perinjananm and thanks for Dr rajesh Wilson famous diabetics specialist good service.",
+      tag: "Google Review"
+    }
   ];
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
+    }, 7000);
     return () => clearInterval(slideInterval);
   }, [testimonials.length]);
+
+  const nextSlide = () => setActiveSlide((prev) => (prev + 1) % testimonials.length);
+  const prevSlide = () => setActiveSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
     <div className="relative min-h-screen bg-white dark:bg-brand-dark transition-colors duration-300">
@@ -426,46 +465,170 @@ export const Home: React.FC = () => {
           <div className="space-y-3">
             <div className="text-xs font-bold tracking-widest text-brand-primary uppercase font-display">Patient Testimonials</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white leading-tight">
-              Words of Gratitude & Success
+              Words of Gratitude & Patient Reviews
             </h2>
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans max-w-lg mx-auto">
+              Real experiences and feedback shared by patients on our clinical excellence and healthcare services.
+            </p>
+          </div>
+
+          {/* Google Reviews Live Summary Scorecard */}
+          <div className="medical-card glossy-shine p-6 sm:p-8 max-w-xl mx-auto rounded-2xl border border-slate-200 dark:border-slate-800 text-left rtl:text-right shadow-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+              
+              {/* Star Distribution Bars Left */}
+              <div className="w-full sm:w-3/5 space-y-2 font-sans">
+                {[
+                  { star: 5, pct: '97%' },
+                  { star: 4, pct: '3%' },
+                  { star: 3, pct: '0%' },
+                  { star: 2, pct: '0%' },
+                  { star: 1, pct: '0%' }
+                ].map((item) => (
+                  <div key={item.star} className="flex items-center space-x-3 text-xs text-slate-500 dark:text-slate-400">
+                    <span className="w-2.5 text-right font-semibold">{item.star}</span>
+                    <div className="flex-1 h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                      <div
+                        className="h-full rounded-full bg-amber-400"
+                        style={{ width: item.pct }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Score & Stars Right */}
+              <div className="w-full sm:w-2/5 flex flex-col items-center sm:items-start pl-0 sm:pl-6 sm:border-l border-slate-100 dark:border-slate-800 text-center sm:text-left rtl:sm:text-right rtl:sm:border-l-0 rtl:sm:border-r rtl:sm:pr-6 rtl:sm:pl-0">
+                <span className="font-display font-black text-5xl sm:text-6xl text-slate-900 dark:text-white leading-none">
+                  5.0
+                </span>
+                <div className="flex space-x-1 text-amber-400 my-2.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4.5 h-4.5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                  192 reviews on Google
+                </span>
+                <a
+                  href="https://maps.app.goo.gl/vFtvkhToTLgSravf7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center space-x-1.5 text-xs font-bold text-brand-primary hover:text-brand-navy dark:hover:text-white transition-colors"
+                >
+                  <span>Google Profile</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+
+            </div>
           </div>
 
           {/* Testimonial Display Card */}
-          <div className="medical-card glossy-shine relative min-h-[200px] p-8 sm:p-10 flex flex-col justify-between text-left rtl:text-right">
-            <div className="flex justify-center sm:justify-start space-x-1 text-amber-400 mb-5">
-              {[...Array(testimonials[activeSlide].rating)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-              ))}
+          <div className="medical-card glossy-shine relative min-h-[260px] p-8 sm:p-10 flex flex-col justify-between text-left rtl:text-right shadow-sm transition-all duration-300">
+            <div>
+              {/* Header: Rating & Google Badge */}
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <div className="flex items-center space-x-1.5">
+                  <div className="flex space-x-0.5 text-amber-400">
+                    {[...Array(testimonials[activeSlide].rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-xs font-bold text-slate-700 dark:text-slate-300 ml-1">5.0</span>
+                </div>
+
+                <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                    <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                  </svg>
+                  <span className="text-[11px] font-semibold text-slate-600 dark:text-slate-300">Google Review</span>
+                </div>
+              </div>
+
+              {/* Review Text */}
+              <div className="relative mb-5">
+                <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 italic font-sans leading-relaxed">
+                  "{testimonials[activeSlide].text}"
+                </p>
+              </div>
+
+              {/* Response from owner if exists */}
+              {testimonials[activeSlide].ownerResponse && (
+                <div className="mt-4 mb-5 p-3.5 rounded-xl bg-brand-primary/5 dark:bg-brand-primary/10 border-l-2 border-brand-primary text-xs text-slate-600 dark:text-slate-300">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="font-bold text-brand-primary text-[11px] tracking-wide uppercase">
+                      Response from the owner
+                    </span>
+                    <span className="text-[10px] text-slate-400">
+                      {testimonials[activeSlide].ownerResponseDate}
+                    </span>
+                  </div>
+                  <p className="italic text-slate-700 dark:text-slate-200">
+                    "{testimonials[activeSlide].ownerResponse}"
+                  </p>
+                </div>
+              )}
             </div>
 
-            <p className="text-sm sm:text-base text-slate-550 dark:text-slate-300 italic font-sans leading-relaxed mb-5">
-              "{testimonials[activeSlide].text}"
-            </p>
+            {/* Author Footer */}
+            <div className="flex items-center justify-between pt-5 border-t border-slate-100 dark:border-slate-800/80">
+              <div className="flex items-center space-x-3.5">
+                <div className="w-10 h-10 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center font-display font-bold text-sm">
+                  {testimonials[activeSlide].name.charAt(0).toUpperCase()}
+                </div>
+                <div>
+                  <span className="font-display font-bold text-slate-900 dark:text-white text-sm block">
+                    {testimonials[activeSlide].name}
+                  </span>
+                  <span className="text-[11px] text-slate-400 dark:text-slate-500 font-sans">
+                    {testimonials[activeSlide].meta}
+                  </span>
+                </div>
+              </div>
 
-            <div className="flex flex-col items-start pt-4 border-t border-slate-100 dark:border-slate-800/80">
-              <span className="font-display font-bold text-slate-900 dark:text-white text-sm">
-                {testimonials[activeSlide].name}
-              </span>
-              <span className="text-[9px] tracking-wider text-brand-primary uppercase font-bold mt-0.5">
-                Patient • {testimonials[activeSlide].tag}
-              </span>
+              <div className="flex items-center space-x-1.5 text-emerald-600 dark:text-emerald-400 text-xs font-semibold">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                <span className="hidden sm:inline text-[11px]">Verified Experience</span>
+              </div>
             </div>
           </div>
 
-          {/* Slide navigation dot togglers */}
-          <div className="flex justify-center space-x-2.5">
-            {testimonials.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setActiveSlide(idx)}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                  activeSlide === idx
-                    ? 'w-7 bg-brand-primary'
-                    : 'bg-slate-205 dark:bg-slate-700'
-                }`}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
+          {/* Slide navigation controls: Prev, Dots, Next */}
+          <div className="flex items-center justify-center space-x-4">
+            <button
+              onClick={prevSlide}
+              className="p-2 rounded-full border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+              aria-label="Previous review"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+
+            <div className="flex justify-center space-x-2">
+              {testimonials.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveSlide(idx)}
+                  className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    activeSlide === idx
+                      ? 'w-7 bg-brand-primary'
+                      : 'w-2 bg-slate-300 dark:bg-slate-700 hover:bg-slate-400'
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={nextSlide}
+              className="p-2 rounded-full border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+              aria-label="Next review"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
 
         </div>

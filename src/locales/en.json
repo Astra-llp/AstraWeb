@@ -139,10 +139,10 @@
     "cardPhone": "Direct Contact Lines",
     "cardEmail": "Electronic Correspondence",
     "cardAddress": "Physical Location",
-    "addressValue": "Astra Medical Center, Prime Healthcare Hub, Suite 101, India",
+    "addressValue": "Mathilakam Kakkathiruthi Rd, Perinjanam, Kerala 680686",
     "hours": "Operating Hours",
-    "hoursWeekdays": "Monday - Saturday: 8:00 AM - 9:00 PM",
-    "hoursSunday": "Sunday: Emergency Diagnostics Only"
+    "hoursWeekdays": "Monday - Saturday: 6:30 AM - 7:30 PM",
+    "hoursSunday": "Sunday: 7:00 AM - 4:00 PM"
   },
   "instructions": {
     "title": "Patient Instructions & FAQ",

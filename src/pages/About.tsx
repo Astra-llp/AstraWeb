@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { HeartPulse, Award, ShieldCheck, Clock, Sparkles } from 'lucide-react';
+import { HeartPulse, Award, ShieldCheck, Clock, Sparkles, Accessibility, Check, MapPin } from 'lucide-react';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
@@ -145,6 +145,71 @@ export const About: React.FC = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* --- FACILITY ACCESSIBILITY & INCLUSIVITY (From Google Business Profile) --- */}
+        <div className="medical-card glossy-shine p-8 sm:p-10 rounded-3xl border border-slate-200 dark:border-slate-800 text-left rtl:text-right space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-5">
+            <div>
+              <span className="text-xs font-bold text-brand-primary uppercase tracking-widest font-display block mb-1">
+                Facility & Accessibility
+              </span>
+              <h2 className="font-display font-bold text-2xl text-slate-900 dark:text-white">
+                Patient-Centric Infrastructure & Inclusivity
+              </h2>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/vFtvkhToTLgSravf7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1.5 text-xs font-bold text-brand-primary hover:text-brand-navy dark:hover:text-white transition-colors"
+            >
+              <MapPin className="w-3.5 h-3.5" />
+              <span>Perinjanam (Plus Code: 848W+2V Perinjanam, Keralam, India)</span>
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800/80 space-y-2">
+              <div className="w-8 h-8 rounded-lg bg-brand-primary/10 flex items-center justify-center text-brand-primary">
+                <Accessibility className="w-4 h-4" />
+              </div>
+              <h4 className="font-display font-bold text-sm text-slate-900 dark:text-white">Wheelchair Accessible</h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
+                Dedicated ramp entrance, parking spaces, and fully accessible consultation seating.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800/80 space-y-2">
+              <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-600">
+                <Check className="w-4 h-4" />
+              </div>
+              <h4 className="font-display font-bold text-sm text-slate-900 dark:text-white">Women-Owned</h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
+                Proudly recognized and operated with empathetic, patient-first clinical leadership.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800/80 space-y-2">
+              <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-600">
+                <HeartPulse className="w-4 h-4" />
+              </div>
+              <h4 className="font-display font-bold text-sm text-slate-900 dark:text-white">Inclusive Space</h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
+                Warm, welcoming, and safe healthcare environment for all members of the community.
+              </p>
+            </div>
+
+            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800/80 space-y-2">
+              <div className="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-600">
+                <Clock className="w-4 h-4" />
+              </div>
+              <h4 className="font-display font-bold text-sm text-slate-900 dark:text-white">Extended Hours</h4>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
+                Open from 6:30 AM weekdays and 7:00 AM on Sundays for prompt fasting samples.
+              </p>
+            </div>
           </div>
         </div>
 

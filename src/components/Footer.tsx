@@ -12,10 +12,10 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
           
           {/* Col 1: Brand & Motto */}
-          <div className="md:col-span-4 space-y-4">
+          <div className="sm:col-span-2 lg:col-span-4 space-y-4">
             <Link to="/" className="flex items-center space-x-2.5">
               <div className="w-9 h-9 rounded-lg bg-brand-primary flex items-center justify-center">
                 <HeartPulse className="w-5 h-5 text-white" />
@@ -27,13 +27,13 @@ export const Footer: React.FC = () => {
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed max-w-sm">
               “{t('motto.text')}”
             </p>
-            <p className="text-xs text-slate-400 dark:text-slate-500 font-sans leading-relaxed">
+            <p className="text-xs text-slate-400 dark:text-slate-500 font-sans leading-relaxed max-w-sm">
               Serving the community with premium diagnostic, diabetology, and general medical diagnostics since 2010. Dedicated clinical accuracy, peer-reviewed charting.
             </p>
           </div>
 
           {/* Col 2: Navigation Links */}
-          <div className="md:col-span-2.5 space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <h4 className="font-display font-bold text-xs uppercase tracking-wider text-slate-900 dark:text-white">
               Clinical Portal
             </h4>
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Col 3: Assistance & Timing */}
-          <div className="md:col-span-2.5 space-y-4">
+          <div className="lg:col-span-3 space-y-4">
             <h4 className="font-display font-bold text-xs uppercase tracking-wider text-slate-900 dark:text-white">
               Help Desk
             </h4>
@@ -82,26 +82,52 @@ export const Footer: React.FC = () => {
                   {t('nav.contact')}
                 </Link>
               </li>
-              <li className="flex items-center space-x-2 text-xs text-slate-500 dark:text-slate-400 pt-1">
-                <Clock className="w-3.5 h-3.5 text-brand-primary shrink-0" />
-                <span>Mon-Sat: 07:00 AM - 09:00 PM</span>
-              </li>
-              <li className="flex items-center space-x-2 text-xs text-amber-600 dark:text-amber-500">
-                <Clock className="w-3.5 h-3.5 shrink-0" />
-                <span>Sunday: 07:00 AM - 01:00 PM</span>
-              </li>
             </ul>
+
+            <div className="pt-2 border-t border-slate-200/50 dark:border-slate-800/50 space-y-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 block">
+                Clinic Timings
+              </span>
+              <div className="space-y-2 font-sans text-xs">
+                <div className="flex items-start space-x-2 text-slate-600 dark:text-slate-300">
+                  <Clock className="w-3.5 h-3.5 text-brand-primary shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold block text-slate-800 dark:text-slate-200">Mon – Sat</span>
+                    <span className="text-slate-500 dark:text-slate-400 whitespace-nowrap">06:30 AM – 07:30 PM</span>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-2 text-amber-600 dark:text-amber-400">
+                  <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold block">Sunday</span>
+                    <span className="text-slate-500 dark:text-slate-400 whitespace-nowrap">07:00 AM – 04:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Col 4: Contact Info */}
-          <div className="md:col-span-3 space-y-4">
+          <div className="lg:col-span-3 space-y-4">
             <h4 className="font-display font-bold text-xs uppercase tracking-wider text-slate-900 dark:text-white">
               Astra Desk
             </h4>
             <ul className="space-y-3 font-sans text-xs sm:text-sm text-slate-500 dark:text-slate-400">
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-brand-primary shrink-0 mt-0.5" />
-                <span>{t('contact.addressValue')}</span>
+                <div>
+                  <a
+                    href="https://maps.app.goo.gl/vFtvkhToTLgSravf7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand-primary transition-colors block font-medium"
+                  >
+                    {t('contact.addressValue')}
+                  </a>
+                  <span className="text-[11px] text-slate-400 dark:text-slate-500 block mt-0.5">
+                    Plus Code: 848W+2V Perinjanam, Keralam, India
+                  </span>
+                </div>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-brand-primary shrink-0" />
@@ -126,9 +152,9 @@ export const Footer: React.FC = () => {
             © {currentYear} Astra Medical Center & Diagnostics. All rights reserved.
           </div>
           <div className="flex space-x-4">
-            <a href="#/instructions" className="hover:text-brand-primary transition-colors">Patient Policy</a>
+            <Link to="/instructions" className="hover:text-brand-primary transition-colors">Patient Policy</Link>
             <span>•</span>
-            <a href="#/contact" className="hover:text-brand-primary transition-colors">Emergency Triage</a>
+            <Link to="/contact" className="hover:text-brand-primary transition-colors">Emergency Triage</Link>
           </div>
         </div>
 

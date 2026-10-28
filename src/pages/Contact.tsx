@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, CheckCircle2, ShieldCheck, ExternalLink, MessageCircle } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -23,11 +23,22 @@ export const Contact: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const getDepartmentLabel = (code: string) => {
+    switch (code) {
+      case 'diabetes': return 'Diabetes Care';
+      case 'diagnostics': return 'Diagnostics & Imaging';
+      case 'consultation': return 'General Consultation';
+      case 'laboratory': return 'Automated Laboratory Services';
+      case 'preventive': return 'Preventive Health Care';
+      case 'checkups': return 'Executive Health Checkup Packages';
+      default: return code;
+    }
+  };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleWhatsAppSubmit = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
 
-    if (!name || !phone || !service) {
+    if (!name.trim() || !phone.trim() || !service) {
       setErrorMsg("Please fill in Name, Phone Number, and select a Clinical Department.");
       return;
     }
@@ -35,18 +46,40 @@ export const Contact: React.FC = () => {
     setErrorMsg('');
     setIsSubmitting(true);
 
-    // Simulate clinical API transmit latency
+    const dept = getDepartmentLabel(service);
+    const text = `*New Consultation Request - Astra Medical Center*\n\n` +
+      `🏥 *Department:* ${dept}\n` +
+      `👤 *Patient Name:* ${name.trim()}\n` +
+      `📞 *Phone:* ${phone.trim()}\n` +
+      (email.trim() ? `📧 *Email:* ${email.trim()}\n` : '') +
+      `📝 *Message / Symptoms:* ${message.trim() || 'General consultation inquiry'}\n\n` +
+      `_Sent from Astra Medical Center & Diagnostics website_`;
+
+    const whatsappUrl = `https://wa.me/918089233554?text=${encodeURIComponent(text)}`;
+
     setTimeout(() => {
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
       setIsSubmitting(false);
       setSubmitSuccess(true);
-      
-      // Clear form fields
-      setName('');
-      setEmail('');
-      setPhone('');
-      setService('');
-      setMessage('');
-    }, 2000);
+    }, 300);
+  };
+
+  const handleEmailSubmit = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+
+    if (!name.trim() || !phone.trim() || !service) {
+      setErrorMsg("Please fill in Name, Phone Number, and select a Clinical Department.");
+      return;
+    }
+
+    setErrorMsg('');
+    const dept = getDepartmentLabel(service);
+    const subject = `Consultation Request: ${name.trim()} (${dept})`;
+    const body = `Patient Name: ${name.trim()}\nPhone: ${phone.trim()}\nEmail: ${email.trim() || 'N/A'}\nDepartment: ${dept}\n\nMessage / Symptoms:\n${message.trim() || 'N/A'}\n\nSent from Astra Medical Center & Diagnostics Website`;
+
+    const mailtoUrl = `mailto:astramedlabs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+    setSubmitSuccess(true);
   };
 
   const contactCards = [
@@ -65,8 +98,8 @@ export const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: t('contact.cardAddress'),
-      details: [t('contact.addressValue')],
-      link: "https://maps.google.com"
+      details: [t('contact.addressValue'), "Plus Code: 848W+2V Perinjanam, Keralam, India"],
+      link: "https://maps.app.goo.gl/vFtvkhToTLgSravf7"
     }
   ];
 
@@ -143,7 +176,7 @@ export const Contact: React.FC = () => {
                 {t('contact.formTitle')}
               </h3>
 
-              <form onSubmit={handleFormSubmit} className="space-y-6">
+              <form onSubmit={handleWhatsAppSubmit} className="space-y-6">
                 
                 {/* 1. Name Input Field */}
                 <div className="relative">
@@ -261,22 +294,42 @@ export const Contact: React.FC = () => {
                     </motion.div>
                   )}
                   {submitSuccess && (
-                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-500 text-left rtl:text-right flex items-start space-x-2">
+                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-600 dark:text-emerald-400 text-left rtl:text-right flex items-start space-x-2">
                       <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5 text-emerald-500" />
-                      <span>{t('contact.formSuccess')}</span>
+                      <div>
+                        <span className="font-bold block">Inquiry Sent Successfully!</span>
+                        <span className="font-normal text-[11px]">Your request has been dispatched to Astra Medical Center (+91 80892 33554). Our clinical coordinator will respond shortly.</span>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
 
-                {/* Submit Action Button */}
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full py-4 rounded-xl font-display font-semibold text-sm tracking-wider uppercase text-white bg-brand-primary hover:bg-brand-navy transition-all duration-300 flex items-center justify-center space-x-2 shadow-medical hover:shadow-medical-hover active:scale-95 disabled:opacity-75"
-                >
-                  <Send className="w-4 h-4 animate-pulse-slow" />
-                  <span>{isSubmitting ? t('contact.formSending') : t('contact.formSubmit')}</span>
-                </button>
+                {/* Dual Action Submit Buttons */}
+                <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                  <button
+                    type="button"
+                    onClick={handleWhatsAppSubmit}
+                    disabled={isSubmitting}
+                    className="flex-1 py-4 px-5 rounded-xl font-display font-semibold text-xs tracking-wider uppercase text-white bg-emerald-600 hover:bg-emerald-700 active:scale-98 transition-all duration-300 flex items-center justify-center space-x-2 shadow-md cursor-pointer disabled:opacity-75"
+                  >
+                    <MessageCircle className="w-4 h-4 shrink-0" />
+                    <span>Send via WhatsApp</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={handleEmailSubmit}
+                    disabled={isSubmitting}
+                    className="py-4 px-5 rounded-xl font-display font-semibold text-xs tracking-wider uppercase text-slate-700 dark:text-slate-200 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 active:scale-98 transition-all duration-300 flex items-center justify-center space-x-2 border border-slate-200 dark:border-slate-700 cursor-pointer disabled:opacity-75"
+                  >
+                    <Mail className="w-4 h-4 shrink-0 text-brand-primary" />
+                    <span>Send via Email</span>
+                  </button>
+                </div>
+
+                <p className="text-[11px] text-slate-400 dark:text-slate-500 text-center font-sans">
+                  Direct Coordinator Desk: <a href="tel:8089233554" className="text-brand-primary font-semibold hover:underline">080892 33554</a> / <a href="tel:7092030885" className="text-brand-primary font-semibold hover:underline">70920 30885</a>
+                </p>
 
               </form>
             </div>
@@ -286,21 +339,36 @@ export const Contact: React.FC = () => {
 
         {/* --- PHYSICAL EMBEDDED GOOGLE MAP --- */}
         <div className="space-y-6">
-          <div className="text-left rtl:text-right space-y-2 border-l-4 border-brand-primary pl-4 rtl:pl-0 rtl:pr-4">
-            <span className="text-xs font-bold text-brand-primary uppercase tracking-widest font-display">Astra Headquarters</span>
-            <h3 className="font-display font-bold text-2xl text-brand-navy dark:text-white">Physical Location & Facility Access</h3>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-l-4 border-brand-primary pl-4 rtl:pl-0 rtl:pr-4">
+            <div className="text-left rtl:text-right space-y-1">
+              <span className="text-xs font-bold text-brand-primary uppercase tracking-widest font-display">Astra Medical Center & Diagnostics</span>
+              <h3 className="font-display font-bold text-2xl text-brand-navy dark:text-white">Physical Location & Driving Directions</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-sans">
+                Mathilakam Kakkathiruthi Rd, Perinjanam, Kerala 680686 • Plus Code: 848W+2V Perinjanam, Keralam, India
+              </p>
+            </div>
+            <a
+              href="https://maps.app.goo.gl/vFtvkhToTLgSravf7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-brand-primary text-white font-display font-bold text-xs uppercase tracking-wider hover:bg-brand-navy transition-all duration-200 shrink-0 self-start sm:self-auto shadow-sm"
+            >
+              <span>Get Directions</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
           </div>
 
           <div className="h-96 rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-medical bg-slate-100 dark:bg-slate-900 relative">
             <iframe
-              title="Astra Medical Center Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8923055964893!2d77.62235!3d12.97854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzQyLjciTiA3N8KwMzcnMjAuNSJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+              title="Astra Medical Center & Diagnostics Google Map"
+              src="https://maps.google.com/maps?q=10.3150156,76.1472131&hl=en&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="opacity-90 dark:opacity-80 transition-opacity"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="opacity-95 dark:opacity-85 transition-opacity"
             />
           </div>
         </div>

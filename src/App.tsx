@@ -3,6 +3,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { FloatingControls } from './components/FloatingControls';
+import { ScrollToTop } from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Services } from './pages/Services';
@@ -15,6 +16,7 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen text-slate-800 dark:text-slate-100 bg-brand-light dark:bg-brand-dark transition-colors duration-500 font-sans antialiased">
           
           {/* Global Sticky Navbar */}
