@@ -15,11 +15,11 @@ export const Services: React.FC = () => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
 
   const servicesList: ServiceItem[] = [
-    { id: 'diabetes', icon: HeartPulse, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-850' },
-    { id: 'diagnostics', icon: Stethoscope, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-850' },
-    { id: 'consultation', icon: Activity, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-850' },
-    { id: 'laboratory', icon: ShieldCheck, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-850' },
-    { id: 'checkups', icon: Award, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-850' }
+    { id: 'diabetes', icon: HeartPulse, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'diagnostics', icon: Stethoscope, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'consultation', icon: Activity, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'laboratory', icon: ShieldCheck, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'checkups', icon: Award, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' }
   ];
 
   return (
@@ -88,7 +88,7 @@ export const Services: React.FC = () => {
             <h3 className="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white leading-tight">
               Looking to consult with our medical panel?
             </h3>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-405 font-sans leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
               Our automated laboratory desks run smoothly for all metabolic and thyroid panels. Dial our clinical support coordinators or inquire online.
             </p>
           </div>
@@ -126,7 +126,7 @@ export const Services: React.FC = () => {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedService(null)}
-                className="absolute top-6 right-6 p-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-450 dark:text-slate-400 transition-colors cursor-pointer"
+                className="absolute top-6 right-6 p-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition-colors cursor-pointer"
                 aria-label="Close"
               >
                 <X className="w-4 h-4" />
@@ -156,7 +156,7 @@ export const Services: React.FC = () => {
               </div>
 
               {/* Modal Footer CTA */}
-              <div className="pt-6 border-t border-slate-100 dark:border-slate-850 mt-6 flex flex-col sm:flex-row gap-3">
+              <div className="pt-6 border-t border-slate-100 dark:border-slate-800 mt-6 flex flex-col sm:flex-row gap-3">
                 <Link
                   to="/contact"
                   onClick={() => setSelectedService(null)}
@@ -166,7 +166,7 @@ export const Services: React.FC = () => {
                 </Link>
                 <button
                   onClick={() => setSelectedService(null)}
-                  className="flex-1 py-3 rounded-xl font-display font-bold text-xs tracking-wider uppercase text-slate-600 dark:text-slate-350 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-center flex items-center justify-center cursor-pointer transition-colors"
+                  className="flex-1 py-3 rounded-xl font-display font-bold text-xs tracking-wider uppercase text-slate-600 dark:text-slate-400 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-center flex items-center justify-center cursor-pointer transition-colors"
                 >
                   {t('services.close')}
                 </button>

@@ -66,7 +66,7 @@ export const About: React.FC = () => {
             <div className="medical-card glossy-shine p-8 text-left rtl:text-right space-y-4 w-full">
               <span className="text-[10px] font-bold text-brand-primary uppercase tracking-wider">Astra Diagnostics Desk</span>
               <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white">Empowering Patients, Empowering Lives</h3>
-              <p className="text-xs text-slate-450 dark:text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 We believe that accurate diagnosis is the cornerstone of effective therapy. Under the clinical directorate of Dr. Rajesh Wilson, we combine metabolic diabetology checks with modern laboratory assessments to give you complete trust in your health profile.
               </p>
             </div>

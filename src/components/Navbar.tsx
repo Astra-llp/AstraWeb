@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useTheme } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Globe, Menu, X, Phone, Mail } from 'lucide-react';
+import { Globe, Menu, X, Phone, Mail } from 'lucide-react';
 
 const LANGUAGES = [
   { code: 'en', label: 'English' },
+  { code: 'ml', label: 'മലയാളം' },
+  { code: 'ar', label: 'العربية' },
   { code: 'hi', label: 'हिन्दी' },
   { code: 'ta', label: 'தமிழ்' },
-  { code: 'ml', label: 'മലയാളം' }
+  { code: 'kn', label: 'ಕನ್ನಡ' },
+  { code: 'te', label: 'తెలుగు' }
 ];
 
 export const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [langDropdown, setLangDropdown] = useState(false);
@@ -63,7 +64,7 @@ export const Navbar: React.FC = () => {
       }`}
     >
       {/* South Zone inspired top contact details bar */}
-      <div className="hidden sm:block bg-brand-navy dark:bg-slate-900 text-slate-100/90 dark:text-slate-355 text-[11px] font-sans py-2 border-b border-white/5 dark:border-slate-800/50 transition-all">
+      <div className="hidden sm:block bg-brand-navy dark:bg-slate-900 text-slate-100/90 dark:text-slate-300 text-[11px] font-sans py-2 border-b border-white/5 dark:border-slate-800/50 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center space-x-5 rtl:space-x-reverse">
             <a href="tel:8089233554" className="hover:text-brand-secondary dark:hover:text-brand-primary transition-colors flex items-center gap-1.5">
@@ -162,20 +163,11 @@ export const Navbar: React.FC = () => {
 
           {/* Actions Block */}
           <div className="hidden lg:flex items-center space-x-3.5 rtl:space-x-reverse">
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-150 dark:border-slate-750 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer"
-              aria-label="Toggle Theme"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
-            </button>
-
             {/* Language Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setLangDropdown(!langDropdown)}
-                className="flex items-center space-x-1.5 rtl:space-x-reverse px-3 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-150 dark:border-slate-750 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer text-xs font-semibold"
+                className="flex items-center space-x-1.5 rtl:space-x-reverse px-3 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer text-xs font-semibold"
               >
                 <Globe className="w-3.5 h-3.5 text-brand-primary" />
                 <span className="uppercase">{activeLang.code}</span>
@@ -190,7 +182,7 @@ export const Navbar: React.FC = () => {
                       initial={{ opacity: 0, y: 8, scale: 0.98 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.98 }}
-                      className="absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-40 rounded-xl bg-white dark:bg-brand-cardDark border border-slate-100 dark:border-slate-800 shadow-md overflow-hidden z-20 py-1"
+                      className="absolute right-0 rtl:left-0 rtl:right-auto mt-2 w-44 rounded-xl bg-white dark:bg-brand-cardDark border border-slate-100 dark:border-slate-800 shadow-lg max-h-72 overflow-y-auto z-20 py-1"
                     >
                       {LANGUAGES.map((lang) => (
                         <button
@@ -223,13 +215,6 @@ export const Navbar: React.FC = () => {
 
           {/* Mobile Menu Trigger */}
           <div className="flex lg:hidden items-center space-x-2.5 rtl:space-x-reverse">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-300"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
-            </button>
-
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-300"
@@ -285,7 +270,7 @@ export const Navbar: React.FC = () => {
                       className={`py-2 rounded-lg text-xs font-semibold transition-all ${
                         i18n.language === lang.code
                           ? 'bg-brand-primary text-white shadow-sm'
-                          : 'bg-slate-55 dark:bg-slate-800 text-slate-750 dark:text-slate-350 border border-slate-100 dark:border-slate-800'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-400 border border-slate-100 dark:border-slate-800'
                       }`}
                     >
                       {lang.label.split(' ')[0]}

@@ -24,7 +24,7 @@ export const Gallery: React.FC = () => {
       title: "Automated Biochemistry Lab",
       desc: "Fully integrated high-throughput analyzer line delivering biochemical profiles in minutes.",
       metric: "Roche Automated Chemistry",
-      color: "bg-brand-primary/5 dark:bg-slate-850"
+      color: "bg-brand-primary/5 dark:bg-slate-800"
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ export const Gallery: React.FC = () => {
       title: "Cardiac Diagnostic Suite",
       desc: "Multi-channel ECG and stress profiling bays with real-time cardiovascular telemetry.",
       metric: "12-Channel Telemetry System",
-      color: "bg-brand-primary/5 dark:bg-slate-850"
+      color: "bg-brand-primary/5 dark:bg-slate-800"
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export const Gallery: React.FC = () => {
       title: "Diabetology Consultation Room",
       desc: "Private executive suite designed for specialized metabolic and insulin advisory.",
       metric: "Diabetology Zone",
-      color: "bg-brand-primary/5 dark:bg-slate-850"
+      color: "bg-brand-primary/5 dark:bg-slate-800"
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ export const Gallery: React.FC = () => {
       title: "Ultrasound & Imaging Bay",
       desc: "High-resolution organ visualization and vascular blood flow mapping.",
       metric: "4D Doppler Ultrasound",
-      color: "bg-brand-primary/5 dark:bg-slate-850"
+      color: "bg-brand-primary/5 dark:bg-slate-800"
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ export const Gallery: React.FC = () => {
       title: "Pathology Screening Desk",
       desc: "Computerized microscopic examination and blood-cell profiling panels.",
       metric: "Pathology Desk",
-      color: "bg-brand-primary/5 dark:bg-slate-850"
+      color: "bg-brand-primary/5 dark:bg-slate-800"
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ export const Gallery: React.FC = () => {
       title: "VIP Patient Observation Lounge",
       desc: "Luxury post-diagnostic observation room featuring absolute comfort and medical assistance.",
       metric: "Observation Zone",
-      color: "bg-brand-primary/5 dark:bg-slate-850"
+      color: "bg-brand-primary/5 dark:bg-slate-800"
     }
   ];
 
@@ -89,7 +89,7 @@ export const Gallery: React.FC = () => {
           <h1 className="font-display font-black text-4xl sm:text-5xl text-slate-900 dark:text-white leading-tight">
             {t('gallery.title')}
           </h1>
-          <p className="text-base sm:text-lg text-slate-500 dark:text-slate-405 font-sans leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
             {t('gallery.subtitle')}
           </p>
         </div>
@@ -108,7 +108,7 @@ export const Gallery: React.FC = () => {
               className={`px-5 py-2.5 rounded-xl text-xs font-display font-bold uppercase tracking-wider transition-all duration-200 border cursor-pointer ${
                 filter === btn.code
                   ? 'bg-brand-primary text-white border-brand-primary shadow-sm scale-102'
-                  : 'bg-white dark:bg-brand-cardDark text-slate-600 dark:text-slate-350 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800'
+                  : 'bg-white dark:bg-brand-cardDark text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800'
               }`}
             >
               {btn.label}
@@ -146,7 +146,7 @@ export const Gallery: React.FC = () => {
                     <h3 className="font-display font-bold text-lg leading-tight text-slate-900 dark:text-white">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-slate-450 dark:text-slate-400 font-sans leading-relaxed line-clamp-2">
+                    <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed line-clamp-2">
                       {item.desc}
                     </p>
                   </div>

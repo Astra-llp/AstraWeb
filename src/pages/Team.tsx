@@ -55,12 +55,14 @@ export const Team: React.FC = () => {
                 </div>
               </div>
 
-              {/* Clean Profile Badge */}
+              {/* Clean Profile Photo Badge */}
               <div className="space-y-4 mb-6">
-                <div className="w-28 h-28 mx-auto rounded-full bg-gradient-to-tr from-brand-primary to-brand-secondary p-[3px] flex items-center justify-center shadow-sm">
-                  <div className="w-full h-full rounded-full bg-white dark:bg-brand-cardDark flex items-center justify-center text-brand-primary font-display font-black text-2xl">
-                    RW
-                  </div>
+                <div className="w-36 h-36 mx-auto rounded-full bg-gradient-to-tr from-brand-primary to-brand-secondary p-1 shadow-md overflow-hidden">
+                  <img
+                    src="/dr-rajesh-wilson.jpg"
+                    alt="Dr. Rajesh Wilson"
+                    className="w-full h-full rounded-full object-cover object-top"
+                  />
                 </div>
                 <div className="space-y-1.5">
                   <h3 className="font-display font-bold text-2xl text-slate-900 dark:text-white">Dr. Rajesh Wilson</h3>
@@ -77,8 +79,8 @@ export const Team: React.FC = () => {
                 <div className="space-y-2 text-xs text-slate-500 dark:text-slate-400 font-sans">
                   {consultationTimings.map((time, tIdx) => (
                     <div key={tIdx} className="flex justify-between gap-4 border-b border-slate-100 dark:border-slate-800/50 pb-1.5 last:border-b-0 last:pb-0">
-                      <span className="font-semibold text-slate-700 dark:text-slate-350">{time.day}</span>
-                      <span className="text-slate-500 dark:text-slate-450 text-right">{time.hours}</span>
+                      <span className="font-semibold text-slate-700 dark:text-slate-400">{time.day}</span>
+                      <span className="text-slate-500 dark:text-slate-500 text-right">{time.hours}</span>
                     </div>
                   ))}
                 </div>
@@ -111,7 +113,7 @@ export const Team: React.FC = () => {
                     </div>
                     <div className="space-y-0.5">
                       <h4 className="font-display font-bold text-sm text-slate-900 dark:text-white">{qual.code}</h4>
-                      <p className="text-[11px] text-slate-450 dark:text-slate-500 leading-normal font-sans">{qual.label}</p>
+                      <p className="text-[11px] text-slate-500 dark:text-slate-500 leading-normal font-sans">{qual.label}</p>
                     </div>
                   </div>
                 ))}
@@ -142,7 +144,7 @@ export const Team: React.FC = () => {
             <p className="text-xs sm:text-sm text-slate-300 dark:text-slate-400 font-sans leading-relaxed max-w-xl">
               Consult with Dr. Rajesh Wilson for metabolic profiling, thyroid monitoring, or customized insulin management protocols.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 font-sans text-xs text-slate-350">
+            <div className="flex flex-col sm:flex-row gap-4 font-sans text-xs text-slate-400">
               <div className="flex items-center space-x-2">
                 <Phone className="w-3.5 h-3.5 text-brand-primary animate-pulse-slow" />
                 <span>Call Support: 8089233554 / 7092030885</span>
