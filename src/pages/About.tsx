@@ -14,7 +14,7 @@ export const About: React.FC = () => {
     {
       icon: HeartPulse,
       title: "Patient Empathy",
-      desc: "Guided by our motto 'Empowering Patients, Empowering Lives', we deliver care that is kind, personal, and dedicated."
+      desc: "Guided by our motto 'Your Health. Our Priority.', we deliver quality, compassionate, and accessible healthcare for individuals and families."
     },
     {
       icon: Award,
@@ -54,7 +54,7 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-7 space-y-5 text-left rtl:text-right">
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-slate-900 dark:text-white">
-              Providing Exceptional Clinical Standards Since 2010
+              Trusted Healthcare Center in Perinjanam, Thrissur
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-sans">
               {t('about.intro')}

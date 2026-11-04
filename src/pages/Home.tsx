@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { HeartPulse, Award, ChevronRight, ChevronLeft, Stethoscope, ShieldCheck, Star, ExternalLink, Users, Clock, Quote } from 'lucide-react';
+import { HeartPulse, Award, ChevronRight, ChevronLeft, Stethoscope, ShieldCheck, Star, ExternalLink, Users, Clock, Quote, Bed } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Custom useInView hook for performant scroll triggering without third-party dependencies
@@ -194,7 +194,11 @@ export const Home: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="text-emerald-500 font-bold">✓</span>
-                <span>24/7 Automated Labs</span>
+                <span>Astra Diabetic Foundation</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-emerald-500 font-bold">✓</span>
+                <span>Day Care & Advanced Labs</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="text-emerald-500 font-bold">✓</span>
@@ -211,7 +215,7 @@ export const Home: React.FC = () => {
             className="lg:col-span-5 relative flex justify-center items-center"
           >
             {/* Elegant Clean Card with low-transparency doctor background and styled stat boxes */}
-            <div className="medical-card glossy-shine relative w-full max-w-sm sm:max-w-md min-h-[460px] flex flex-col justify-between p-7 overflow-hidden rounded-[28px] shadow-medical hover:shadow-medical-hover transition-all duration-300 group">
+            <div className="medical-card glossy-shine relative w-full max-w-sm sm:max-w-md min-h-[460px] flex flex-col justify-between p-5 sm:p-7 overflow-hidden rounded-[28px] shadow-medical hover:shadow-medical-hover transition-all duration-300 group">
               
               {/* Doctor Photo Watermark Background with low transparency - Full Card Coverage */}
               <div className="absolute inset-0 pointer-events-none overflow-hidden select-none z-0">
@@ -234,18 +238,18 @@ export const Home: React.FC = () => {
               </div>
 
               {/* Doctor Profile Info Box */}
-              <div className="z-10 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-sm flex items-center gap-3.5 my-auto">
-                <div className="w-14 h-14 shrink-0 rounded-2xl bg-gradient-to-tr from-brand-primary to-brand-secondary p-[2px] shadow-sm overflow-hidden">
+              <div className="z-10 p-3.5 sm:p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-sm flex items-center gap-3 sm:gap-3.5 my-auto">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-2xl bg-gradient-to-tr from-brand-primary to-brand-secondary p-[2px] shadow-sm overflow-hidden">
                   <img 
                     src="/dr-rajesh-wilson.jpg" 
                     alt="Dr. Rajesh Wilson" 
                     className="w-full h-full rounded-2xl object-cover object-top"
                   />
                 </div>
-                <div className="space-y-0.5 text-left rtl:text-right">
-                  <span className="text-[10px] tracking-widest text-brand-primary uppercase font-bold block">Senior Consultant</span>
-                  <h3 className="font-display font-bold text-lg text-slate-900 leading-tight">Dr. Rajesh Wilson</h3>
-                  <p className="text-[11px] text-slate-500 font-semibold font-sans">MBBS, MD., FiCPH (USA), FIDM (UK)</p>
+                <div className="space-y-0.5 text-left rtl:text-right min-w-0">
+                  <span className="text-[10px] tracking-widest text-brand-primary uppercase font-bold block truncate">Senior Consultant</span>
+                  <h3 className="font-display font-bold text-base sm:text-lg text-slate-900 leading-tight truncate">Dr. Rajesh Wilson</h3>
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 font-semibold font-sans truncate">MBBS, MD., FiCPH (USA), FIDM (UK)</p>
                 </div>
               </div>
 
@@ -284,20 +288,20 @@ export const Home: React.FC = () => {
       <section className="relative py-4.5 bg-brand-primary/5 dark:bg-slate-900/60 border-y border-slate-100 dark:border-slate-800/80 overflow-hidden select-none z-10">
         <div className="flex whitespace-nowrap overflow-hidden">
           <div className="flex space-x-12 animate-marquee-continuous font-display text-xs tracking-wider uppercase font-bold text-slate-600 dark:text-slate-400">
-            <span>⚡ {t('instructions.guideline1')}</span>
-            <span>✦ {t('instructions.guideline2')}</span>
-            <span>⚡ {t('instructions.guideline3')}</span>
-            <span>✦ {t('instructions.guideline4')}</span>
             <span>⚡ Astra Medical Center: {t('motto.text')}</span>
+            <span>✦ {t('motto.secondary')}</span>
+            <span>⚡ Astra Diabetic Foundation & Specialized Diabetes Care</span>
+            <span>✦ State-of-the-Art Day Care Center & Advanced Laboratory</span>
+            <span>⚡ {t('instructions.guideline1')}</span>
             <span>✦ Support Desk: 8089233554 / 7092030885</span>
           </div>
           {/* Duplicated for seamless loop */}
           <div className="flex space-x-12 animate-marquee-continuous font-display text-xs tracking-wider uppercase font-bold text-slate-600 dark:text-slate-400" aria-hidden="true">
-            <span>⚡ {t('instructions.guideline1')}</span>
-            <span>✦ {t('instructions.guideline2')}</span>
-            <span>⚡ {t('instructions.guideline3')}</span>
-            <span>✦ {t('instructions.guideline4')}</span>
             <span>⚡ Astra Medical Center: {t('motto.text')}</span>
+            <span>✦ {t('motto.secondary')}</span>
+            <span>⚡ Astra Diabetic Foundation & Specialized Diabetes Care</span>
+            <span>✦ State-of-the-Art Day Care Center & Advanced Laboratory</span>
+            <span>⚡ {t('instructions.guideline1')}</span>
             <span>✦ Support Desk: 8089233554 / 7092030885</span>
           </div>
         </div>
@@ -348,15 +352,18 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* --- CLINICAL SERVICES TEASER (5 main categories) --- */}
+      {/* --- CLINICAL SERVICES TEASER (4 core specialized pillars) --- */}
       <section className="py-20 bg-slate-50/30 dark:bg-slate-900/10 relative z-10 border-y border-slate-100 dark:border-slate-800/85">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div className="space-y-3 text-left rtl:text-right">
               <div className="text-xs font-bold tracking-widest text-brand-primary uppercase font-display">{t('services.title')}</div>
               <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white leading-tight">
-                Our Core Medical & Clinical Specialties
+                Specialized Healthcare Under One Roof
               </h2>
+              <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans max-w-2xl">
+                Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine — Perinjanam, Thrissur, Kerala
+              </p>
             </div>
             <Link
               to="/services"
@@ -367,61 +374,80 @@ export const Home: React.FC = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             
-            {/* Service 1 */}
-            <div className="medical-card glossy-shine p-7 sm:p-8 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
+            {/* Service 1: Astra Diabetic Foundation */}
+            <div className="medical-card glossy-shine p-6 sm:p-7 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:bg-brand-primary/20 transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-5 group-hover:bg-brand-primary/20 transition-colors">
                   <HeartPulse className="w-6 h-6 text-brand-primary" />
                 </div>
-                <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white mb-3 group-hover:text-brand-primary transition-colors">
+                <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-2.5 group-hover:text-brand-primary transition-colors">
                   {t('services.items.diabetes.title')}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
                   {t('services.items.diabetes.desc')}
                 </p>
               </div>
               <Link to="/services" className="text-xs font-bold tracking-wider text-brand-primary hover:text-brand-navy dark:hover:text-white uppercase flex items-center space-x-1.5 pt-4 border-t border-slate-100 dark:border-slate-800 transition-colors">
-                <span>View Guidelines</span>
+                <span>Explore Details</span>
                 <span>→</span>
               </Link>
             </div>
 
-            {/* Service 2 */}
-            <div className="medical-card glossy-shine p-7 sm:p-8 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
+            {/* Service 2: General Consultation & Family Physician */}
+            <div className="medical-card glossy-shine p-6 sm:p-7 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:bg-brand-primary/20 transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-5 group-hover:bg-brand-primary/20 transition-colors">
                   <Stethoscope className="w-6 h-6 text-brand-primary" />
                 </div>
-                <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white mb-3 group-hover:text-brand-primary transition-colors">
-                  {t('services.items.diagnostics.title')}
+                <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-2.5 group-hover:text-brand-primary transition-colors">
+                  {t('services.items.consultation.title')}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
-                  {t('services.items.diagnostics.desc')}
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
+                  {t('services.items.consultation.desc')}
                 </p>
               </div>
               <Link to="/services" className="text-xs font-bold tracking-wider text-brand-primary hover:text-brand-navy dark:hover:text-white uppercase flex items-center space-x-1.5 pt-4 border-t border-slate-100 dark:border-slate-800 transition-colors">
-                <span>View Guidelines</span>
+                <span>Explore Details</span>
                 <span>→</span>
               </Link>
             </div>
 
-            {/* Service 3 */}
-            <div className="medical-card glossy-shine p-7 sm:p-8 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
+            {/* Service 3: Advanced Diagnostic Laboratory */}
+            <div className="medical-card glossy-shine p-6 sm:p-7 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:bg-brand-primary/20 transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-5 group-hover:bg-brand-primary/20 transition-colors">
                   <ShieldCheck className="w-6 h-6 text-brand-primary" />
                 </div>
-                <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white mb-3 group-hover:text-brand-primary transition-colors">
+                <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-2.5 group-hover:text-brand-primary transition-colors">
                   {t('services.items.laboratory.title')}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
                   {t('services.items.laboratory.desc')}
                 </p>
               </div>
               <Link to="/services" className="text-xs font-bold tracking-wider text-brand-primary hover:text-brand-navy dark:hover:text-white uppercase flex items-center space-x-1.5 pt-4 border-t border-slate-100 dark:border-slate-800 transition-colors">
-                <span>View Guidelines</span>
+                <span>Explore Details</span>
+                <span>→</span>
+              </Link>
+            </div>
+
+            {/* Service 4: State-of-the-Art Day Care Center */}
+            <div className="medical-card glossy-shine p-6 sm:p-7 hover:shadow-medical-hover hover:-translate-y-1 transition-all duration-300 group text-left rtl:text-right flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-5 group-hover:bg-brand-primary/20 transition-colors">
+                  <Bed className="w-6 h-6 text-brand-primary" />
+                </div>
+                <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-2.5 group-hover:text-brand-primary transition-colors">
+                  {t('services.items.daycare.title')}
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed mb-6">
+                  {t('services.items.daycare.desc')}
+                </p>
+              </div>
+              <Link to="/services" className="text-xs font-bold tracking-wider text-brand-primary hover:text-brand-navy dark:hover:text-white uppercase flex items-center space-x-1.5 pt-4 border-t border-slate-100 dark:border-slate-800 transition-colors">
+                <span>Explore Details</span>
                 <span>→</span>
               </Link>
             </div>

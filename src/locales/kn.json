@@ -13,8 +13,9 @@
     "callSupport": "ಕರೆ ಮಾಡಿ"
   },
   "motto": {
-    "text": "ರೋಗಿಗಳ ಸಬಲೀಕರಣ, ಜೀವಗಳ ಸಬಲೀಕರಣ",
-    "cta": "ತಕ್ಷಣ ವೈದ್ಯಕೀಯ ನೆರವು ಪಡೆಯಿರಿ"
+    "text": "Your Health. Our Priority.",
+    "cta": "ತಕ್ಷಣ ವೈದ್ಯಕೀಯ ನೆರವು ಪಡೆಯಿರಿ",
+    "secondary": "Empowering Lives Through Quality Healthcare."
   },
   "hero": {
     "badge": "ವಿಶ್ವದರ್ಜೆಯ ವೈದ್ಯಕೀಯ ಶ್ರೇಷ್ಠತೆ",
@@ -54,7 +55,7 @@
     "bookService": "ವಿವರಗಳಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ",
     "items": {
       "diabetes": {
-        "title": "ಮಧುಮೇಹ ಆರೈಕೆ",
+        "title": "Astra Diabetic Foundation & Specialized Diabetes Care",
         "desc": "ಟೈಪ್ 1, 2 ಡಯಾಬಿಟಿಸ್, ಗರ್ಭಾವಸ್ಥೆಯ ಮಧುಮೇಹ ಮತ್ತು ವಿಶೇಷ ಇನ್ಸುಲಿನ್ ಥೆರಪಿಗಳ ಸುಧಾರಿತ ಕ್ಲಿನಿಕ್.",
         "full": "ಡಾ. राजेश ವಿಲ್ಸನ್ (ಯುಕೆ ಇಂದ ಡಯಾಬಿಟಿಸ್‌ನಲ್ಲಿ ಫೆಲೋಶಿಪ್) ನೇತೃತ್ವದ ನಮ್ಮ ಕ್ಲಿನಿಕ್, ಗ್ಲುಕೋಸ್ ಮೇಲ್ವಿಚಾರಣೆ, ಚಯಾಪಚಯ ಸಮಾಲೋಚನೆ ಮತ್ತು ಮಧುಮೇಹ ಪಾದದ ರಕ್ಷಣೆ ಸೇವೆಗಳನ್ನು ನೀಡುತ್ತದೆ."
       },
@@ -64,12 +65,12 @@
         "full": "ಮಲ್ಟಿ-ಚಾನೆಲ್ ಇಸಿಜಿ ಮತ್ತು ಸುಧಾರಿತ ಅಲ್ಟ್ರಾಸೌಂಡ್ ಯಂತ್ರಗಳೊಂದಿಗೆ ನಮ್ಮ ವಿಭಾಗದಲ್ಲಿ ರೋಗಗಳನ್ನು ಅತ್ಯಂತ ವೇಗವಾಗಿ ಮತ್ತು ನಿಖರವಾಗಿ ಪತ್ತೆಹಚ್ಚುತ್ತೇವೆ."
       },
       "consultation": {
-        "title": "ಸಾಮಾನ್ಯ ಸಮಾಲೋಚನೆ",
+        "title": "General Consultation & Family Physician",
         "desc": "ಪ್ರಾಥಮಿಕ ವೈದ್ಯಕೀಯ ಮೌಲ್ಯಮಾಪನ, ಕೌಟುಂಬಿಕ ವೈದ್ಯಕೀಯ ಸಮಾಲೋಚನೆಗಳು ಮತ್ತು ತಡೆಗಟ್ಟುವ ಆರೋಗ್ಯ ಸಲಹೆಗಳು.",
         "full": "ಡಾ. ರಾಜೇಶ್ ವಿಲ್ಸನ್ ಜ್ವರ, ಉಸಿರಾಟದ ತೊಂದರೆಗಳು, ರಕ್ತದೊತ್ತಡ ಮತ್ತು ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಸುಧಾರಣೆಗೆ ಅಗತ್ಯವಿರುವ ಪ್ರಾಥಮಿಕ ಚಿಕಿತ್ಸೆಗಳನ್ನು ನೀಡುತ್ತಾರೆ."
       },
       "laboratory": {
-        "title": "ಪ್ರಯೋಗಾಲಯ ಸೇವೆಗಳು",
+        "title": "Advanced Diagnostic Laboratory",
         "desc": "24/7 ಸ್ವಯಂಚಾಲಿತ ಬಯೋಕೆಮಿಸ್ಟ್ರಿ, ಪೆಥಾಲಜಿ, ಹೆಮಟಾಲಜಿ ಮತ್ತು ಸೋಂಕು ಪರೀಕ್ಷೆಗಳು.",
         "full": "ಆಸ್ಟ್ರಾ ಲ್ಯಾಬ್ಸ್ ಅಂತರರಾಷ್ಟ್ರೀಯ ಗುಣಮಟ್ಟದ ಸ್ವಯಂಚಾಲಿತ ಯಂತ್ರಗಳನ್ನು ಹೊಂದಿದ್ದು, ಥೈರಾಯ್ಡ್, ಲಿಪಿಡ್ ಪ್ರೊಫೈಲ್ ಪರೀಕ್ಷಾ ವರದಿಗಳನ್ನು ಅತಿ ಶೀಘ್ರವಾಗಿ ನೀಡುತ್ತದೆ."
       },
@@ -87,6 +88,16 @@
         "title": "ತುರ್ತು ಸಮಾಲೋಚನೆ",
         "desc": "ತೀವ್ರ ಅನಾರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳಲ್ಲಿ ತಕ್ಷಣದ ವೈದ್ಯಕೀಯ ನೆರವು ಮತ್ತು ಶೀಘ್ರ ಚಿಕಿತ್ಸಾ ವಿಧಾನಗಳು.",
         "full": "ತೀವ್ರ ಜ್ವರ, ಮಧುಮೇಹ ತುರ್ತು ಪರಿಸ್ಥಿತಿಗಳು, ಎದೆನೋವು ಮೊದಲಾದ ತೀವ್ರ ತೊಂದರೆಗಳಿಗೆ ನಮ್ಮ ವೈದ್ಯಕೀಯ ತಂಡ ತಕ್ಷಣದ ನೆರವು ನೀಡುತ್ತದೆ."
+      },
+      "daycare": {
+        "title": "State-of-the-Art Day Care Center",
+        "desc": "Safe, efficient medical care for observation, minor procedures, and day care treatments without prolonged hospitalization.",
+        "full": "Our modern day care center is equipped with state-of-the-art facilities to provide safe, efficient, and comfortable medical care for patients requiring observation, minor procedures, and day care treatments without prolonged hospitalization."
+      },
+      "pediatrics": {
+        "title": "Preventive Pediatric Services",
+        "desc": "Developmental tracking and preventive healthcare for infants and children.",
+        "full": "Comprehensive preventive pediatric services ensuring healthy growth for infants and children through developmental assessments and routine wellness visits."
       }
     }
   },
@@ -95,7 +106,7 @@
     "subtitle": "ಆಸ್ಟ್ರಾ ವೈದ್ಯಕೀಯ ಕೇಂದ್ರವು ಸುಧಾರಿತ ವೈದ್ಯಕೀಯ ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ಕಾಳಜಿಯುಕ್ತ ಮಾನವೀಯ ಮೌಲ್ಯಗಳ ರೋಗಿಗಳ ಆರೈಕೆಗೆ ಹೆಸರಾಗಿದೆ.",
     "intro": "ಆಸ್ಟ್ರಾ ವೈದ್ಯಕೀಯ ಕೇಂದ್ರವು ಈ ಭಾಗದ ಅತ್ಯುತ್ತಮ ವೈದ್ಯಕೀಯ ಸೇವೆಗಳ ಸಂಕೇತವಾಗಿದೆ. ಡಾ. ರಾಜೇಶ್ ವಿಲ್ಸನ್ ರವರ ನೇತೃತ್ವದಲ್ಲಿ ನಮ್ಮ ಕ್ಲಿನಿಕ್‌ಗಳು ಮತ್ತು ಲ್ಯಾಬ್‌ಗಳು ಅಂತರರಾಷ್ಟ್ರೀಯ ನಿಯಮಾವಳಿಗಳ ಪ್ರಕಾರ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ.",
     "missionTitle": "ನಮ್ಮ ಧ್ಯೇಯ",
-    "mission": "ನಿಖರವಾದ ವಿಜ್ಞಾನ ಮತ್ತು ಸಮರ್ಪಿತ ವೈದ್ಯಕೀಯ ಸೇವೆಯ ಮೂಲಕ ರೋಗಿಗಳ ಜೀವನವನ್ನು ಆರೋಗ್ಯಕರವಾಗಿಡುವುದು.",
+    "mission": "To empower individuals and families through accessible, affordable, and quality healthcare, combining medical expertise, modern diagnostic technology, preventive medicine, and compassionate patient care.",
     "visionTitle": "ನಮ್ಮ ದೃಷ್ಟಿಕೋನ",
     "vision": "ಅತ್ಯುತ್ತಮ ಗುಣಮಟ್ಟ, ಆರಾಮದಾಯಕ ಅನುಭವಕ್ಕೆ ಹೆಸರಾದ ಇಂಟಿಗ್ರೇಟೆಡ್ ಕ್ಲಿನಿಕಲ್ ಕೇರ್ ಮತ್ತು ಡಯಾಗ್ನೋಸ್ಟಿಕ್ಸ್‌ನಲ್ಲಿ ಜಾಗತಿಕ ಗೋಲ್ಡ್ ಸ್ಟ್ಯಾಂಡರ್ಡ್ ಆಗುವುದು.",
     "whyUsTitle": "ರೋಗಿಗಳು ಆಸ್ಟ್ರಾ ಅನ್ನು ಏಕೆ ಆರಿಸಿಕೊಳ್ಳುತ್ತಾರೆ?",

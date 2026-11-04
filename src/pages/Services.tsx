@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { HeartPulse, Stethoscope, ShieldCheck, Activity, Award, X, Sparkles } from 'lucide-react';
+import { HeartPulse, Stethoscope, ShieldCheck, Activity, Bed, Baby, X, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface ServiceItem {
@@ -16,10 +16,11 @@ export const Services: React.FC = () => {
 
   const servicesList: ServiceItem[] = [
     { id: 'diabetes', icon: HeartPulse, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
-    { id: 'diagnostics', icon: Stethoscope, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
-    { id: 'consultation', icon: Activity, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'consultation', icon: Stethoscope, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
     { id: 'laboratory', icon: ShieldCheck, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
-    { id: 'checkups', icon: Award, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' }
+    { id: 'daycare', icon: Bed, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'pediatrics', icon: Baby, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' },
+    { id: 'diagnostics', icon: Activity, color: 'text-brand-primary bg-brand-primary/10 dark:bg-slate-800' }
   ];
 
   return (

@@ -17,18 +17,21 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand & Motto */}
           <div className="sm:col-span-2 lg:col-span-4 space-y-4">
             <Link to="/" className="flex items-center space-x-2.5">
-              <div className="w-9 h-9 rounded-lg bg-brand-primary flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-brand-primary flex items-center justify-center shrink-0">
                 <HeartPulse className="w-5 h-5 text-white" />
               </div>
-              <span className="font-display font-bold text-lg text-slate-900 dark:text-white tracking-wide">
-                {t('nav.brand')}
+              <span className="font-display font-bold text-base sm:text-lg text-slate-900 dark:text-white tracking-wide">
+                {t('nav.brandFull') || 'Astra Medical Center & Diagnostics'}
               </span>
             </Link>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm font-semibold text-brand-primary font-sans leading-relaxed max-w-sm">
               “{t('motto.text')}”
             </p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 font-sans leading-relaxed max-w-sm">
+              {t('motto.secondary') || 'Empowering Lives Through Quality Healthcare.'}
+            </p>
             <p className="text-xs text-slate-400 dark:text-slate-500 font-sans leading-relaxed max-w-sm">
-              Serving the community with premium diagnostic, diabetology, and general medical diagnostics since 2010. Dedicated clinical accuracy, peer-reviewed charting.
+              Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine — Perinjanam, Thrissur, Kerala.
             </p>
           </div>
 

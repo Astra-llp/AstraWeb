@@ -13,8 +13,9 @@
     "callSupport": "कॉल करें"
   },
   "motto": {
-    "text": "मरीजों का सशक्तिकरण, जीवन का सशक्तिकरण",
-    "cta": "अभी चिकित्सा सहायता प्राप्त करें"
+    "text": "Your Health. Our Priority.",
+    "cta": "अभी चिकित्सा सहायता प्राप्त करें",
+    "secondary": "Empowering Lives Through Quality Healthcare."
   },
   "hero": {
     "badge": "विश्व स्तरीय चिकित्सा उत्कृष्टता",
@@ -54,7 +55,7 @@
     "bookService": "पूछताछ करें",
     "items": {
       "diabetes": {
-        "title": "मधुमेह देखभाल",
+        "title": "Astra Diabetic Foundation & Specialized Diabetes Care",
         "desc": "टाइप 1 और 2 मधुमेह, गर्भावधि मधुमेह और कस्टम इंसुलिन थेरेपी के लिए उन्नत क्लिनिक।",
         "full": "डॉ. राजेश विल्सन (यूके से डायबिटीज में फेलो) के नेतृत्व में हमारा मधुमेह क्लिनिक सटीक ग्लूकोज नियंत्रण, चयापचय परामर्श, जटिलताओं से बचाव, इंसुलिन पंप और पैरों की व्यापक जांच प्रदान करता है।"
       },
@@ -64,12 +65,12 @@
         "full": "मल्टी-चैनल ईसीजी और उच्च श्रेणी की अल्ट्रासाउंड मशीनों से लैस हमारा नैदानिक केंद्र हर बीमारी का तुरंत और अत्यंत सटीक पता लगाने में सक्षम है।"
       },
       "consultation": {
-        "title": "सामान्य परामर्श",
+        "title": "General Consultation & Family Physician",
         "desc": "प्राथमिक नैदानिक मूल्यांकन, पारिवारिक चिकित्सा परामर्श, और निवारक स्वास्थ्य प्रोटोकॉल।",
         "full": "डॉ. राजेश विल्सन बुखार, संक्रमण, रक्तचाप, पुरानी सांस की बीमारियों और सामान्य स्वास्थ्य सुधार के लिए व्यापक प्राथमिक उपचार और परामर्श प्रदान करते हैं।"
       },
       "laboratory": {
-        "title": "प्रयोगशाला सेवाएँ",
+        "title": "Advanced Diagnostic Laboratory",
         "desc": "24/7 पूरी तरह से स्वचालित जैव रसायन, पैथोलॉजी, हेमेटोलॉजी और सीरोलॉजी परीक्षण।",
         "full": "अस्त्रा लैब्स में अंतरराष्ट्रीय स्तर के स्वचालित एनालाइजर हैं जो न्यूनतम समय में थायराइड प्रोफाइल, लिपिड स्तर, रक्त गणना और संक्रमण जांच रिपोर्ट प्रदान करते हैं।"
       },
@@ -87,6 +88,16 @@
         "title": "आपातकालीन परामर्श",
         "desc": "अति-तीव्र चिकित्सा परिस्थितियों में तत्काल प्राथमिक चिकित्सा, तीव्र ट्राइएज और परामर्श।",
         "full": "तेज बुखार, मधुमेह की गंभीर आपातकालीन स्थितियों, छाती में बेचैनी जैसी तीव्र समस्याओं के लिए हमारी टीम तुरंत चिकित्सा सहायता और त्वरित जांच सेवाएं प्रदान करती है।"
+      },
+      "daycare": {
+        "title": "State-of-the-Art Day Care Center",
+        "desc": "Safe, efficient medical care for observation, minor procedures, and day care treatments without prolonged hospitalization.",
+        "full": "Our modern day care center is equipped with state-of-the-art facilities to provide safe, efficient, and comfortable medical care for patients requiring observation, minor procedures, and day care treatments without prolonged hospitalization."
+      },
+      "pediatrics": {
+        "title": "Preventive Pediatric Services",
+        "desc": "Developmental tracking and preventive healthcare for infants and children.",
+        "full": "Comprehensive preventive pediatric services ensuring healthy growth for infants and children through developmental assessments and routine wellness visits."
       }
     }
   },
@@ -95,7 +106,7 @@
     "subtitle": "अस्त्रा मेडिकल सेंटर एंड डायग्नोस्टिक्स आधुनिकतम चिकित्सा प्रौद्योगिकी और दयालु मानवीय व्यवहार का अद्भुत संगम है।",
     "intro": "अस्त्रा मेडिकल सेंटर क्षेत्र में नैदानिक उत्कृष्टता का प्रतीक है। डॉ. राजेश विल्सन के विशेषज्ञ मार्गदर्शन में, हमारे डायग्नोस्टिक और नैदानिक विभाग अंतरराष्ट्रीय स्तर पर समीक्षा किए गए प्रोटोकॉल पर आधारित हैं, जो हर मरीज को बेहतरीन सेवा सुनिश्चित करते हैं।",
     "missionTitle": "हमारा मिशन",
-    "mission": "सटीक विज्ञान और समर्पित चिकित्सा के माध्यम से जीवन को सशक्त बनाने के लिए उच्च-सटीक निदान और व्यक्तिगत स्वास्थ्य सेवाएं प्रदान करना।",
+    "mission": "To empower individuals and families through accessible, affordable, and quality healthcare, combining medical expertise, modern diagnostic technology, preventive medicine, and compassionate patient care.",
     "visionTitle": "हमारा विजन",
     "vision": "एकीकृत नैदानिक देखभाल और विशेषज्ञ प्रबंधन में वैश्विक स्तर पर स्वर्ण मानक स्थापित करना, जो हमारी उत्कृष्ट गुणवत्ता और मरीजों के शानदार अनुभव के लिए जाना जाए।",
     "whyUsTitle": "अस्त्रा को क्यों चुनते हैं मरीज?",

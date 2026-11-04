@@ -13,8 +13,9 @@
     "callSupport": "కాల్ చేయండి"
   },
   "motto": {
-    "text": "రోగుల సశక్తీకరణ, జీవితాల సశక్తీకరణ",
-    "cta": "వెంటనే వైద్య సహాయం పొందండి"
+    "text": "Your Health. Our Priority.",
+    "cta": "వెంటనే వైద్య సహాయం పొందండి",
+    "secondary": "Empowering Lives Through Quality Healthcare."
   },
   "hero": {
     "badge": "ప్రపంచ స్థాయి వైద్య నైపుణ్యం",
@@ -54,7 +55,7 @@
     "bookService": "వివరాల కోసం సంప్రదించండి",
     "items": {
       "diabetes": {
-        "title": "మధుమేహ సంరక్షణ",
+        "title": "Astra Diabetic Foundation & Specialized Diabetes Care",
         "desc": "టైప్ 1, 2 డయాబెటిస్, గర్భధారణ మధుమేహం మరియు ప్రత్యేక ఇన్సులిన్ థెరపీల కోసం అధునాతన క్లినిక్.",
         "full": "డా. రాజేష్ విల్సన్ (యూకే నుండి డయాబెటిస్‌లో ఫెలోషిప్) నేతృత్వంలోని మా డయాబెటిస్ క్లినిక్, గ్లూకోజ్ పర్యవేక్షణ, మెటబాలిక్ కౌన్సెలింగ్ మరియు డయాబెటిక్ ఫుట్ సంరక్షణ సేవలను అందిస్తుంది."
       },
@@ -64,12 +65,12 @@
         "full": "మల్టీ-ఛానల్ ఈసీజీ మరియు అధునాతన అల్ట్రాసౌండ్ మిషన్లతో మా డయాగ్నోస్టిక్ విభాగంలో వ్యాధులను త్వరగా, ఖచ్చితంగా గుర్తిస్తాము."
       },
       "consultation": {
-        "title": "సాధారణ సంప్రదింపులు",
+        "title": "General Consultation & Family Physician",
         "desc": "ప్రాథమిక క్లినికల్ అంచనా, కుటుంబ వైద్య సంప్రదింపులు మరియు నివారణ ఆరోగ్య ప్రోటోకాల్స్.",
         "full": "డా. రాజేష్ విల్సన్ జ్వరం, శ్వాసకోశ వ్యాధులు, రక్తపోటు మరియు సాధారణ ఆరోగ్య మెరుగుదలకు అవసరమైన ప్రాథమిక చికిత్సలను అందిస్తారు."
       },
       "laboratory": {
-        "title": "ప్రయోగశాల సేవలు",
+        "title": "Advanced Diagnostic Laboratory",
         "desc": "24/7 ఆటోమేటెడ్ బయోకెమిస్ట్రీ, పాథాలజీ, హెమటాలజీ మరియు ఇన్ఫెక్షన్ పరీక్షలు.",
         "full": "ఆస్ట్రా ల్యాబ్స్ అంతర్జాతీయ ప్రమాణాలు కలిగిన ఆటోమేటెడ్ ఎనలైజర్లను కలిగి ఉంది, ఇవి థైరాయిడ్, లిపిడ్ ప్రొఫైల్ పరీక్ష ఫలితాలను అతి త్వరగా అందిస్తాయి."
       },
@@ -87,6 +88,16 @@
         "title": "అత్యవసర సంప్రదింపులు",
         "desc": "తీవ్రమైన అనారోగ్య పరిస్థితుల్లో తక్షణ వైద్య సహాయం మరియు శీఘ్ర చికిత్స విధానాలు.",
         "full": "తీవ్రమైన జ్వరం, మధుమేహ అత్యవసర పరిస్థితులు, గుండెలో అసౌకర్యం వంటి సమస్యలకు మా వైద్య బృందం తక్షణ సహాయం అందిస్తుంది."
+      },
+      "daycare": {
+        "title": "State-of-the-Art Day Care Center",
+        "desc": "Safe, efficient medical care for observation, minor procedures, and day care treatments without prolonged hospitalization.",
+        "full": "Our modern day care center is equipped with state-of-the-art facilities to provide safe, efficient, and comfortable medical care for patients requiring observation, minor procedures, and day care treatments without prolonged hospitalization."
+      },
+      "pediatrics": {
+        "title": "Preventive Pediatric Services",
+        "desc": "Developmental tracking and preventive healthcare for infants and children.",
+        "full": "Comprehensive preventive pediatric services ensuring healthy growth for infants and children through developmental assessments and routine wellness visits."
       }
     }
   },
@@ -95,7 +106,7 @@
     "subtitle": "ఆస్ట్రా మెడికల్ సెంటర్ అత్యాధునextended వైద్య సాంకేతికత మరియు మానవతా విలువలతో కూడిన రోగుల సంరక్షణకు పెట్టింది పేరు.",
     "intro": "ఆస్ట్రా మెడికల్ సెంటర్ ఈ ప్రాంతంలో అత్యుత్తమ వైద్య సేవలకు ప్రతీకగా నిలుస్తుంది. డా. రాజేష్ విల్సన్ నిపుణుల పర్యవేక్షణలో మా క్లినిక్‌లు మరియు ల్యాబ్‌లు అంతర్జాతీయ ప్రమాణాల ప్రకారం పనిచేస్తాయి.",
     "missionTitle": "మా లక్ష్యం",
-    "mission": "ఖచ్చితమైన సైన్స్ మరియు అంకితభావ వైద్యం ద్వారా రోగుల జీవితాలను సురక్షితంగా, ఆరోగ్యంగా ఉంచడం.",
+    "mission": "To empower individuals and families through accessible, affordable, and quality healthcare, combining medical expertise, modern diagnostic technology, preventive medicine, and compassionate patient care.",
     "visionTitle": "మా విజన్",
     "vision": "అత్యుత్తమ నాణ్యత, సౌకర్యవంతమైన అనుభవానికి పేరొందిన ఇంటిగ్రేటెడ్ క్లినికల్ కేర్ మరియు డయాగ్నోస్టిక్స్‌లో గ్లోబల్ గోల్డ్ స్టాండర్డ్ కావడం.",
     "whyUsTitle": "రోగులు ఆస్ట్రాను ఎందుకు ఎంచుకుంటారు?",

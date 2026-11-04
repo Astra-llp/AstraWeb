@@ -13,18 +13,20 @@
     "callSupport": "Call Support"
   },
   "motto": {
-    "text": "Empowering Patients, Empowering Lives",
+    "text": "Your Health. Our Priority.",
+    "secondary": "Empowering Lives Through Quality Healthcare.",
     "cta": "Get Medical Help Now"
   },
   "hero": {
-    "badge": "World-Class Medical Excellence",
-    "title1": "Redefining",
-    "title2": "Clinical Healthcare",
-    "subtitle": "Combining advanced diagnostics, specialist diabetology, and comprehensive clinical care. Driven by technology, delivered with compassion.",
-    "ctaEmergency": "Emergency Consultation",
+    "badge": "Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine",
+    "title1": "Empowering Lives Through",
+    "title2": "Quality Healthcare",
+    "subtitle": "Astra Medical Center & Diagnostics is a trusted, comprehensive healthcare center located at Perinjanam, Thrissur, Kerala, committed to delivering quality, compassionate, and accessible healthcare for individuals and families.",
+    "ctaEmergency": "Book Consultation",
     "ctaServices": "Explore Our Services",
     "experience": "16+ Years Experience",
-    "expertCare": "Expert Diabetology & GP"
+    "expertCare": "Specialized Diabetes & Family Medicine",
+    "overview": "Our center brings together General Consultation, Family Physician Services, Specialized Diabetes Care, Advanced Laboratory Diagnostics, Preventive Pediatric Services, and a State-of-the-Art Day Care Center under one roof."
   },
   "stats": {
     "patients": "Patients Cared For",
@@ -47,31 +49,31 @@
     "viewProfile": "View Expert Profile"
   },
   "services": {
-    "title": "Comprehensive Medical Services",
-    "subtitle": "Advanced diagnostics, precision diabetes therapies, and high-fidelity laboratory screening protocols designed for your family's longevity.",
+    "title": "Our Specialized Healthcare Services",
+    "subtitle": "Bringing together General Consultation, Family Physician Services, Astra Diabetic Foundation, Advanced Diagnostics, Preventive Pediatrics, and Day Care under one roof in Perinjanam, Thrissur.",
     "viewAll": "Explore Services",
     "close": "Close Details",
     "bookService": "Inquire Now",
     "items": {
       "diabetes": {
-        "title": "Diabetes Care",
-        "desc": "Advanced specialist clinics for Type 1 & 2 Diabetes, Gestational Diabetes, and custom lifestyle insulin therapies.",
-        "full": "Our advanced Diabetes Care clinic, led by Dr. Rajesh Wilson (Fellow in Diabetes Mellitus, UK), specializes in high-precision glucose monitoring, custom metabolic counseling, prevention of microvascular complications (neuropathy, nephropathy, retinopathy), insulin pump therapy, and comprehensive diabetic foot assessments."
+        "title": "Astra Diabetic Foundation & Specialized Diabetes Care",
+        "desc": "Comprehensive diabetes management, early detection, prevention, and long-term care to prevent complications.",
+        "full": "Our dedicated diabetic foundation focuses on comprehensive diabetes management, early detection, prevention, and long-term care. With expert diabetologist services, we provide personalized diabetes treatment, blood sugar monitoring, lifestyle guidance, and preventive care to help patients lead healthier lives while reducing the risk of diabetes-related complications."
       },
       "diagnostics": {
-        "title": "Diagnostics",
-        "desc": "High-fidelity clinical imaging, ultrasound, ECG, cardiovascular screen, and metabolic diagnostics.",
+        "title": "Comprehensive Diagnostic Imaging",
+        "desc": "High-fidelity ultrasound, multi-channel ECG, and cardiovascular health checks interpreted by certified clinical experts.",
         "full": "Equipped with state-of-the-art ultrasound, multi-channel ECG, and digital diagnostic setups, our imaging facility provides absolute clarity for immediate, actionable therapeutic intervention. Every scan is analyzed by credentialed clinical specialists."
       },
       "consultation": {
-        "title": "General Consultation",
-        "desc": "Primary clinical assessment, general family practitioner consultation, and preventive medicine care.",
-        "full": "Dr. Rajesh Wilson provides primary assessment, management of acute systemic infections, chronic respiratory disorders, hypertensive crises, and general health optimization protocols. Your first step toward long-term wellness."
+        "title": "General Consultation & Family Physician",
+        "desc": "Comprehensive, continuous healthcare for individuals and families of all ages, from common illnesses to chronic disease management.",
+        "full": "Our general consultation and family physician services provide comprehensive, continuous healthcare for individuals and families of all ages. From routine medical consultations and common illnesses to chronic disease management and preventive health assessments, we emphasize personalized care and long-term health monitoring."
       },
       "laboratory": {
-        "title": "Laboratory Services",
-        "desc": "24/7 fully automated clinical biochemistry, pathology, hematology, and serology analysis.",
-        "full": "Astra Labs runs high-throughput automated analyzers delivering ultra-rapid biochemical profiles, lipid levels, thyroid panels, hormone assays, and systemic pathogen screening. Fully compliant with premium international laboratory quality standards."
+        "title": "Advanced Diagnostic Laboratory",
+        "desc": "Reliable and accurate laboratory investigations supporting timely diagnosis, effective treatment, and preventive screening.",
+        "full": "Our diagnostic laboratory is equipped to provide reliable and accurate laboratory investigations, supporting timely diagnosis, effective treatment, and preventive health screening. We are committed to quality, accuracy, and dependable diagnostic services."
       },
       "preventive": {
         "title": "Preventive Care",
@@ -87,17 +89,27 @@
         "title": "Emergency Consultation",
         "desc": "Immediate critical care support, triage protocols, and hyper-acute medical consultations.",
         "full": "For sudden acute crises, high fevers, diabetic ketoacidosis, hyperosmolar states, and acute chest discomfort, our team provides urgent triage, stabilization, and immediate diagnostic processing."
+      },
+      "daycare": {
+        "title": "State-of-the-Art Day Care Center",
+        "desc": "Safe, efficient, and comfortable medical care for patients requiring observation, minor procedures, and day care treatments without prolonged hospitalization.",
+        "full": "Our modern day care center is equipped with state-of-the-art facilities to provide safe, efficient, and comfortable medical care for patients requiring observation, minor procedures, and day care treatments without prolonged hospitalization."
+      },
+      "pediatrics": {
+        "title": "Preventive Pediatric Services",
+        "desc": "Continuous developmental tracking, routine wellness assessments, and compassionate preventive healthcare for infants and children.",
+        "full": "Our preventive pediatric services are dedicated to ensuring healthy child development through comprehensive routine checkups, growth monitoring, preventive health screening, and personalized pediatric guidance for families."
       }
     }
   },
   "about": {
-    "title": "Defining Healthcare Standards",
-    "subtitle": "Astra Medical Center & Diagnostics stands at the interface of cutting-edge technology and human-centric medical practice.",
-    "intro": "Established as a beacon of clinical excellence, Astra Medical Center serves as a trusted healthcare partner. Under the expert guidance of Dr. Rajesh Wilson, our diagnostic and clinical departments are built around high-fidelity, peer-reviewed international protocols, ensuring that every patient receives professional attention.",
+    "title": "Astra Medical Center & Diagnostics, Perinjanam",
+    "subtitle": "Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine — Perinjanam, Thrissur, Kerala",
+    "intro": "Astra Medical Center & Diagnostics is a trusted, comprehensive healthcare center located at Perinjanam, Thrissur, Kerala, committed to delivering quality, compassionate, and accessible healthcare for individuals and families. Our center brings together General Consultation, Family Physician Services, Specialized Diabetes Care, Advanced Laboratory Diagnostics, Preventive Pediatric Services, and a State-of-the-Art Day Care Center under one roof.",
     "missionTitle": "Our Mission",
-    "mission": "To provide high-precision diagnostics and top-tier personalized healthcare, empowering patient lives through accurate science and dedicated medicine.",
-    "visionTitle": "Our Vision",
-    "vision": "To become a gold standard in integrated clinical care and diagnostics, recognized for premium diagnostics, compassionate patient care, and expert clinical management.",
+    "mission": "To empower individuals and families through accessible, affordable, and quality healthcare, combining medical expertise, modern diagnostic technology, preventive medicine, and compassionate patient care.",
+    "visionTitle": "Our Vision & Motto",
+    "vision": "Empowering Lives Through Quality Healthcare — Your Health. Our Priority.",
     "whyUsTitle": "Why Trusted Patients Choose Astra",
     "timelineTitle": "Our Scientific Journey",
     "milestones": [

@@ -13,8 +13,9 @@
     "callSupport": "اتصال بالدعم"
   },
   "motto": {
-    "text": "تمكين المرضى، تمكين الحياة",
-    "cta": "احصل على المساعدة الطبية الآن"
+    "text": "Your Health. Our Priority.",
+    "cta": "احصل على المساعدة الطبية الآن",
+    "secondary": "Empowering Lives Through Quality Healthcare."
   },
   "hero": {
     "badge": "التميز الطبي بمستوى عالمي",
@@ -54,7 +55,7 @@
     "bookService": "استفسر الآن",
     "items": {
       "diabetes": {
-        "title": "رعاية السكري",
+        "title": "Astra Diabetic Foundation & Specialized Diabetes Care",
         "desc": "عيادات تخصصية متقدمة لمرضى السكري من النوعين الأول والثاني، وسكري الحمل، وعلاجات الإنسولين المخصصة.",
         "full": "تتميز عيادتنا المتقدمة لرعاية السكري، بقيادة الدكتور راجيش ويلسون (زميل علاج السكري في بريطانيا)، بالدقة الفائقة في مراقبة الجلوكوز، والاستشارات الأيضية المخصصة، والوقاية من مضاعفات الأوعية الدموية الدقيقة، بالإضافة إلى فحص القدم السكرية الشامل وعلاجات مضخة الإنسولين."
       },
@@ -64,12 +65,12 @@
         "full": "مجهزة بأحدث أجهزة الموجات فوق الصوتية وتخطيط القلب متعدد القنوات، توفر مرافقنا التشخيصية وضوحاً مطلقاً للتدخل العلاجي الفوري والمدروس تحت إشراف نخبة من الأطباء الاستشاريين."
       },
       "consultation": {
-        "title": "الاستشارات العامة",
+        "title": "General Consultation & Family Physician",
         "desc": "التقييم السريري الأولي، استشارات طب الأسرة والممارس العام، والرعاية الوقائية الشاملة.",
         "full": "يقدم الدكتور راجيش ويلسون تقييمات أولية لجميع الأعمار، وإدارة الالتهابات الحادة، والاضطرابات التنفسية المزمنة، وأزمات ضغط الدم، وبروتوكولات تحسين الصحة العامة للعيش بإنتاجية وراحة."
       },
       "laboratory": {
-        "title": "الخدمات المخبرية",
+        "title": "Advanced Diagnostic Laboratory",
         "desc": "تحليلات مخبرية مؤتمتة بالكامل على مدار الساعة في الكيمياء الحيوية، الباثولوجيا، وأمراض الدم.",
         "full": "تدير مختبرات أسترا أحدث الأجهزة الآلية التي تقدم نتائج فائقة السرعة والدقة لوظائف الكبد والكلى، الغدة الدرقية، الهرمونات، ومسح مسببات الأمراض، مع الامتثال الكامل للمعايير المخبرية الدولية."
       },
@@ -87,6 +88,16 @@
         "title": "الاستشارات الطارئة",
         "desc": "رعاية الحالات الحرجة الفورية، بروتوكولات الفرز الطبي الحاد، والاستشارات الفائقة السرعة.",
         "full": "في حالات الطوارئ المفاجئة، وارتفاع درجات الحرارة الشديد، والحماض الكيتوني السكري، وآلام الصدر الحادة، يوفر فريقنا الفرز الطبي السريع، والاستقرار الفوري، والتحاليل المستعجلة."
+      },
+      "daycare": {
+        "title": "State-of-the-Art Day Care Center",
+        "desc": "Safe, efficient medical care for observation, minor procedures, and day care treatments without prolonged hospitalization.",
+        "full": "Our modern day care center is equipped with state-of-the-art facilities to provide safe, efficient, and comfortable medical care for patients requiring observation, minor procedures, and day care treatments without prolonged hospitalization."
+      },
+      "pediatrics": {
+        "title": "Preventive Pediatric Services",
+        "desc": "Developmental tracking and preventive healthcare for infants and children.",
+        "full": "Comprehensive preventive pediatric services ensuring healthy growth for infants and children through developmental assessments and routine wellness visits."
       }
     }
   },
@@ -95,7 +106,7 @@
     "subtitle": "يقف مركز أسترا الطبي والتشخيصي في طليعة التكنولوجيا المتقدمة والممارسات الطبية الإنسانية المتميزة.",
     "intro": "تأسس مركز أسترا الطبي ليكون منارة للتميز الإكلينيكي في المنطقة. تحت التوجيه الخبير للدكتور راجيش ويلسون، تم بناء جميع أقسامنا السريرية والتشخيصية وفق بروتوكولات عالمية مراجعة علمياً، مما يضمن حصول كل مريض على أفضل رعاية ممكنة.",
     "missionTitle": "رسالتنا",
-    "mission": "تقديم فحوصات عالية الدقة ورعاية صحية مخصصة من الدرجة الأولى، لتمكين حياة المرضى من خلال العلم الدقيق والطب المخلص.",
+    "mission": "To empower individuals and families through accessible, affordable, and quality healthcare, combining medical expertise, modern diagnostic technology, preventive medicine, and compassionate patient care.",
     "visionTitle": "رؤيتنا",
     "vision": "أن نصبح المعيار الذهبي العالمي في الرعاية الإكلينيكية المتكاملة والتشخيص، معترف بنا لتميز الفحوصات والخبرة الطبية وتجربة المرضى الفاخرة.",
     "whyUsTitle": "لماذا يختار المرضى مركز أسترا؟",
