@@ -170,6 +170,45 @@ export const About: React.FC = () => {
             </a>
           </div>
 
+                    {/* Real Clinic Facility Photos Preview */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+            <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-sm group">
+              <img
+                src="/front.jpg"
+                alt="Astra Medical Center Entrance Perinjanam"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+                <div>
+                  <span className="px-2.5 py-1 rounded bg-white/90 text-brand-primary text-[10px] uppercase font-bold tracking-wider font-display">
+                    Exterior Entrance
+                  </span>
+                  <p className="text-white font-display font-bold text-sm sm:text-base mt-1.5">
+                    Mathilakam Kakkathiruthi Rd, Perinjanam
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden shadow-sm group">
+              <img
+                src="/waiting-area.jpg"
+                alt="Astra Hi-Tech Lab Waiting Area"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
+                <div>
+                  <span className="px-2.5 py-1 rounded bg-white/90 text-brand-primary text-[10px] uppercase font-bold tracking-wider font-display">
+                    Laboratory & Lobby
+                  </span>
+                  <p className="text-white font-display font-bold text-sm sm:text-base mt-1.5">
+                    Hi-Tech Computerised Diagnostic Corridor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800/80 space-y-2">
               <div className="w-8 h-8 rounded-lg bg-brand-primary/10 flex items-center justify-center text-brand-primary">

@@ -540,6 +540,125 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+            {/* --- CLINICAL FACILITY SHOWCASE (REAL PHOTOS) --- */}
+      <section className="py-20 relative z-10 bg-slate-50/40 dark:bg-slate-900/20 border-t border-slate-100 dark:border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div className="space-y-3 text-left rtl:text-right max-w-2xl">
+              <div className="text-xs font-bold tracking-widest text-brand-primary uppercase font-display">Clinic Infrastructure</div>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white leading-tight">
+                Inside Astra Medical Center & Diagnostics
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-sans leading-relaxed">
+                A warm, clean, and modern healthcare environment located on Mathilakam Kakkathiruthi Rd, Perinjanam, Thrissur.
+              </p>
+            </div>
+            <Link
+              to="/gallery"
+              className="inline-flex items-center space-x-1.5 font-display font-bold text-xs tracking-wider uppercase text-brand-primary hover:text-brand-navy dark:hover:text-white transition-colors self-start md:self-auto"
+            >
+              <span>View Full Gallery</span>
+              <span>→</span>
+            </Link>
+          </div>
+
+          {/* 4 Real Image Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            {/* Photo 1: Front */}
+            <Link
+              to="/gallery"
+              className="medical-card glossy-shine group relative h-80 rounded-2xl overflow-hidden shadow-medical hover:shadow-medical-hover transition-all duration-300 block text-left rtl:text-right"
+            >
+              <img
+                src="/front.jpg"
+                alt="Astra Medical Center & Diagnostics Front Entrance"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[10px] uppercase tracking-wider font-bold text-brand-primary shadow-sm">
+                  Clinic Front
+                </span>
+              </div>
+              <div className="absolute bottom-5 left-5 right-5 space-y-1 text-white">
+                <h3 className="font-display font-bold text-base leading-snug">Main Clinic Entrance</h3>
+                <p className="text-[11px] text-slate-200/90 font-sans">Mathilakam Kakkathiruthi Rd, Perinjanam</p>
+              </div>
+            </Link>
+
+            {/* Photo 2: Reception */}
+            <Link
+              to="/gallery"
+              className="medical-card glossy-shine group relative h-80 rounded-2xl overflow-hidden shadow-medical hover:shadow-medical-hover transition-all duration-300 block text-left rtl:text-right"
+            >
+              <img
+                src="/reception.jpg"
+                alt="Astra Medical Reception Desk"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[10px] uppercase tracking-wider font-bold text-brand-primary shadow-sm">
+                  Reception
+                </span>
+              </div>
+              <div className="absolute bottom-5 left-5 right-5 space-y-1 text-white">
+                <h3 className="font-display font-bold text-base leading-snug">Patient Help & Registration</h3>
+                <p className="text-[11px] text-slate-200/90 font-sans">Warm, dedicated patient coordinators</p>
+              </div>
+            </Link>
+
+            {/* Photo 3: Waiting Area / Lab Lobby */}
+            <Link
+              to="/gallery"
+              className="medical-card glossy-shine group relative h-80 rounded-2xl overflow-hidden shadow-medical hover:shadow-medical-hover transition-all duration-300 block text-left rtl:text-right"
+            >
+              <img
+                src="/waiting-area.jpg"
+                alt="Astra Hi-Tech Lab Waiting Area"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[10px] uppercase tracking-wider font-bold text-brand-primary shadow-sm">
+                  Hi-Tech Lab Lobby
+                </span>
+              </div>
+              <div className="absolute bottom-5 left-5 right-5 space-y-1 text-white">
+                <h3 className="font-display font-bold text-base leading-snug">Lab & ECG Waiting Hall</h3>
+                <p className="text-[11px] text-slate-200/90 font-sans">Computerised lab & relaxing aquarium</p>
+              </div>
+            </Link>
+
+            {/* Photo 4: Consultation Waiting Lounge */}
+            <Link
+              to="/gallery"
+              className="medical-card glossy-shine group relative h-80 rounded-2xl overflow-hidden shadow-medical hover:shadow-medical-hover transition-all duration-300 block text-left rtl:text-right"
+            >
+              <img
+                src="/waiting-area-consultation.jpg"
+                alt="Astra Consultation Waiting Lounge"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[10px] uppercase tracking-wider font-bold text-brand-primary shadow-sm">
+                  Consultation
+                </span>
+              </div>
+              <div className="absolute bottom-5 left-5 right-5 space-y-1 text-white">
+                <h3 className="font-display font-bold text-base leading-snug">Specialist Waiting Lounge</h3>
+                <p className="text-[11px] text-slate-200/90 font-sans">Physiotherapy & medical certifications</p>
+              </div>
+            </Link>
+
+          </div>
+
+        </div>
+      </section>
+
       {/* --- TESTIMONIALS SLIDER --- */}
       <section className="py-20 bg-slate-50/50 dark:bg-slate-900/10 relative z-10 border-t border-slate-100 dark:border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-10">

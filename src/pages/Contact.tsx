@@ -358,18 +358,42 @@ export const Contact: React.FC = () => {
             </a>
           </div>
 
-          <div className="h-96 rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-medical bg-slate-100 dark:bg-slate-900 relative">
-            <iframe
-              title="Astra Medical Center & Diagnostics Google Map"
-              src="https://maps.google.com/maps?q=10.3150156,76.1472131&hl=en&z=16&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="opacity-95 dark:opacity-85 transition-opacity"
-            />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+            {/* Front Building Photo */}
+            <div className="lg:col-span-5 medical-card glossy-shine overflow-hidden rounded-3xl relative min-h-[280px] lg:min-h-full flex flex-col justify-end p-6 shadow-medical">
+              <img
+                src="/front.jpg"
+                alt="Astra Medical Center & Diagnostics Front View"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent" />
+              <div className="relative z-10 space-y-1.5 text-white text-left rtl:text-right">
+                <span className="px-2.5 py-0.5 rounded-full bg-brand-primary text-white text-[10px] uppercase font-bold tracking-wider font-display inline-block">
+                  Building Front View
+                </span>
+                <h4 className="font-display font-bold text-lg text-white">
+                  Look for Astra Medical Centre
+                </h4>
+                <p className="text-xs text-slate-200 font-sans">
+                  Easily recognizable green signboard on Mathilakam Kakkathiruthi Rd, Perinjanam with dedicated parking.
+                </p>
+              </div>
+            </div>
+
+            {/* Google Map */}
+            <div className="lg:col-span-7 h-80 lg:h-auto min-h-[350px] rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-medical bg-slate-100 dark:bg-slate-900 relative">
+              <iframe
+                title="Astra Medical Center & Diagnostics Google Map"
+                src="https://maps.google.com/maps?q=10.3150156,76.1472131&hl=en&z=16&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="opacity-95 dark:opacity-85 transition-opacity"
+              />
+            </div>
           </div>
         </div>
 
