@@ -341,7 +341,7 @@ export const Home: React.FC = () => {
                 <Stethoscope className="w-5 h-5" />
               </div>
               <div className="text-[10px] sm:text-xs text-slate-400 dark:text-slate-400 uppercase tracking-widest font-bold mb-1.5">{t('stats.doctors')}</div>
-              <Counter value={4} suffix="+" />
+              <Counter value={3} suffix="+" />
             </div>
             
           </div>
