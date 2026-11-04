@@ -314,7 +314,7 @@ export const Home: React.FC = () => {
                 <Users className="w-5 h-5" />
               </div>
               <div className="text-[10px] sm:text-xs text-slate-400 dark:text-slate-400 uppercase tracking-widest font-bold mb-1.5">{t('stats.patients')}</div>
-              <Counter value={150000} suffix="+" />
+              <Counter value={10} suffix=" Lakh+" />
             </div>
 
             {/* Stat Item 2 */}
