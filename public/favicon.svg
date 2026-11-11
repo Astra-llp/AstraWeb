@@ -1,32 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
   <defs>
-    <linearGradient id="astraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C49F" />
-      <stop offset="100%" stop-color="#00A389" />
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#004D40" flood-opacity="0.3"/>
+    <filter id="astra-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#78350F" flood-opacity="0.35" />
     </filter>
   </defs>
-  
-  <!-- Rounded Hex / Shield Background -->
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#astraGrad)" />
-  
-  <!-- Medical Cross & Pulse Wave Emblem -->
-  <g filter="url(#shadow)">
-    <!-- Pulse Line with Heartbeat Peak -->
+
+  <!-- Official Astra Medical Shooting Star Emblem centered at 64x64 -->
+  <g transform="translate(-12, 9) scale(0.76)" filter="url(#astra-glow)">
+    <!-- 3 small sparkle stars above tail -->
+    <path d="M 28 10 Q 28 14 32 14 Q 28 14 28 18 Q 28 14 24 14 Q 28 14 28 10 Z" fill="url(#gold-gradient)" />
+    <path d="M 52 5 Q 52 8 55 8 Q 52 8 52 11 Q 52 8 49 8 Q 52 8 52 5 Z" fill="url(#gold-gradient)" />
+    <path d="M 22 22 Q 22 24 24 24 Q 22 24 22 26 Q 22 24 20 24 Q 22 24 22 22 Z" fill="url(#gold-gradient)" />
+
+    <!-- Main tilted solid star -->
     <path
-      d="M10 33 L20 33 L24 25 L30 43 L36 19 L41 37 L45 31 L48 33 L54 33"
-      fill="none"
-      stroke="#FFFFFF"
-      stroke-width="4.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      d="M 40 20 L 44.5 34 L 59 34 L 47.5 42 L 52 56 L 40 47.5 L 28 56 L 32.5 42 L 21 34 L 35.5 34 Z"
+      fill="url(#gold-gradient)"
     />
-    <!-- Golden Star Accent (Astra) -->
+
+    <!-- Tail trail shooting from the star's center to the right -->
     <path
-      d="M48 14 L50 19 L55 20 L51 24 L52 29 L48 26 L44 29 L45 24 L41 20 L46 19 Z"
-      fill="#F59E0B"
+      d="M 45 34 C 65 33, 85 32, 98 32 C 85 34, 65 36, 45 36 Z"
+      fill="url(#gold-gradient)"
     />
   </g>
 </svg>

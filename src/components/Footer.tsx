@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Mail, Phone, MapPin, Clock, HeartPulse } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -16,9 +16,33 @@ export const Footer: React.FC = () => {
 
           {/* Col 1: Brand & Motto */}
           <div className="sm:col-span-2 lg:col-span-4 space-y-4">
-            <Link to="/" className="flex items-center space-x-2.5">
-              <div className="w-9 h-9 rounded-lg bg-brand-primary flex items-center justify-center shrink-0">
-                <HeartPulse className="w-5 h-5 text-white" />
+            <Link to="/" className="flex items-center space-x-2.5 group">
+              <div className="relative shrink-0 flex items-center justify-center">
+                <svg
+                  viewBox="0 0 100 80"
+                  className="w-11 h-9 transform group-hover:scale-105 transition-transform duration-300"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient id="footer-gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#FCD34D" />
+                      <stop offset="50%" stopColor="#F59E0B" />
+                      <stop offset="100%" stopColor="#D97706" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M 28 10 Q 28 14 32 14 Q 28 14 28 18 Q 28 14 24 14 Q 28 14 28 10 Z" fill="url(#footer-gold-gradient)" />
+                  <path d="M 52 5 Q 52 8 55 8 Q 52 8 52 11 Q 52 8 49 8 Q 52 8 52 5 Z" fill="url(#footer-gold-gradient)" />
+                  <path d="M 22 22 Q 22 24 24 24 Q 22 24 22 26 Q 22 24 20 24 Q 22 24 22 22 Z" fill="url(#footer-gold-gradient)" />
+                  <path
+                    d="M 40 20 L 44.5 34 L 59 34 L 47.5 42 L 52 56 L 40 47.5 L 28 56 L 32.5 42 L 21 34 L 35.5 34 Z"
+                    fill="url(#footer-gold-gradient)"
+                  />
+                  <path
+                    d="M 45 34 C 65 33, 85 32, 98 32 C 85 34, 65 36, 45 36 Z"
+                    fill="url(#footer-gold-gradient)"
+                  />
+                </svg>
               </div>
               <span className="font-display font-bold text-base sm:text-lg text-slate-900 dark:text-white leading-snug">
                 {t('nav.brandFull')}
