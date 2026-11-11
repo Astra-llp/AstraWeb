@@ -21,8 +21,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Outfit', 'sans-serif'],
+        sans: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         medical: '0 8px 30px -2px rgba(0, 169, 130, 0.06), 0 2px 12px -1px rgba(15, 23, 42, 0.03)',

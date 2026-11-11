@@ -8,9 +8,10 @@
     "team": "Our Team",
     "gallery": "Gallery",
     "contact": "Contact Us",
-    "instructions": "Patient Instructions",
+    "instructions": "Instructions",
     "bookNow": "Contact Us",
-    "callSupport": "Call Support"
+    "callSupport": "Call Support",
+    "langMenuLabel": "Language"
   },
   "motto": {
     "text": "Your Health. Our Priority.",
@@ -22,22 +23,46 @@
     "title1": "Empowering Lives Through",
     "title2": "Quality Healthcare",
     "subtitle": "Astra Medical Center & Diagnostics is a trusted, comprehensive healthcare center located at Perinjanam, Thrissur, Kerala, committed to delivering quality, compassionate, and accessible healthcare for individuals and families.",
+    "overview": "Our center brings together General Consultation, Family Physician Services, Specialized Diabetes Care, Advanced Laboratory Diagnostics, Preventive Pediatric Services, and a State-of-the-Art Day Care Center under one roof.",
     "ctaEmergency": "Book Consultation",
     "ctaServices": "Explore Our Services",
     "experience": "16+ Years Experience",
     "expertCare": "Specialized Diabetes & Family Medicine",
-    "overview": "Our center brings together General Consultation, Family Physician Services, Specialized Diabetes Care, Advanced Laboratory Diagnostics, Preventive Pediatric Services, and a State-of-the-Art Day Care Center under one roof."
+    "trustFellow": "Dr. Rajesh Wilson (UK & USA Fellow)",
+    "trustFoundation": "Astra Diabetic Foundation",
+    "trustDayCare": "Day Care & Advanced Labs",
+    "trustRated": "5.0 ⭐ Patient Rated",
+    "tickerBrand": "Astra Medical Center",
+    "tickerFoundation": "Astra Diabetic Foundation & Specialized Diabetes Care",
+    "tickerDayCare": "State-of-the-Art Day Care Center & Advanced Laboratory",
+    "tickerSupport": "Support Desk: 8089233554 / 7092030885",
+    "mobileBadge": "Perinjanam, Thrissur • Kerala",
+    "swipeHint": "Swipe →",
+    "callClinic": "Call Clinic"
   },
   "stats": {
     "patients": "Patients Cared For",
+    "lakhSuffix": " Lakh+",
     "experience": "Years Expert Care",
     "accuracy": "Diagnostic Accuracy",
     "doctors": "Specialist Panels"
   },
   "doctor": {
+    "cardBadge": "Clinical Care",
+    "seniorConsultant": "Senior Consultant",
+    "seniorPractitioner": "Senior Practitioner",
+    "expLabel": "Experience",
+    "expValue": "16+ Years",
+    "fellowshipsLabel": "Fellowships",
+    "fellowshipsValue": "U.K. & USA",
+    "fellowLabel": "Fellow",
+    "ukDiabetes": "U.K. (Diabetes)",
+    "usaPrimaryCare": "USA (Primary Care)",
+    "liveStatus": "Astra Diagnostics Live",
     "title": "Clinical Spotlight",
     "name": "Dr. Rajesh Wilson",
     "role": "Consultant Diabetologist & General Practitioner",
+    "roleShort": "Consultant Diabetologist & GP",
     "experience": "16 Years of Dedicated Experience",
     "qualifications": "MBBS, MD., FiCPH (USA)., FIDM (U.K).",
     "bio": "A globally certified specialist in Diabetes Management and General Medicine, dedicated to providing precision-driven diagnostic insights and personalized patient care protocols.",
@@ -49,15 +74,24 @@
     "viewProfile": "View Expert Profile"
   },
   "services": {
+    "pageBadge": "Specialized Panels",
     "title": "Our Specialized Healthcare Services",
     "subtitle": "Bringing together General Consultation, Family Physician Services, Astra Diabetic Foundation, Advanced Diagnostics, Preventive Pediatrics, and Day Care under one roof in Perinjanam, Thrissur.",
+    "teaserHeading": "Specialized Healthcare Under One Roof",
+    "teaserSub": "Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine — Perinjanam, Thrissur, Kerala",
     "viewAll": "Explore Services",
+    "exploreDetails": "Explore Details",
+    "exploreGuidelines": "Explore Guidelines",
+    "clinicalOverview": "Clinical Overview",
+    "disclaimer": "*Clinical guidelines follow standard local primary health indices. Consult our senior general practitioner for diagnostic analysis.",
+    "bannerTitle": "Looking to consult with our medical panel?",
+    "bannerSub": "Our automated laboratory desks run smoothly for all metabolic and thyroid panels. Dial our clinical support coordinators or inquire online.",
     "close": "Close Details",
     "bookService": "Inquire Now",
     "items": {
       "diabetes": {
         "title": "Astra Diabetic Foundation & Specialized Diabetes Care",
-        "desc": "Comprehensive diabetes management, early detection, prevention, and long-term care to prevent complications.",
+        "desc": "Comprehensive diabetes management, early detection, prevention, and long-term care with personalized blood sugar monitoring and lifestyle guidance.",
         "full": "Our dedicated diabetic foundation focuses on comprehensive diabetes management, early detection, prevention, and long-term care. With expert diabetologist services, we provide personalized diabetes treatment, blood sugar monitoring, lifestyle guidance, and preventive care to help patients lead healthier lives while reducing the risk of diabetes-related complications."
       },
       "diagnostics": {
@@ -102,16 +136,79 @@
       }
     }
   },
+  "facility": {
+    "badge": "Clinic Infrastructure",
+    "title": "Inside Astra Medical Center & Diagnostics",
+    "subtitle": "A warm, clean, and modern healthcare environment located on Mathilakam Kakkathiruthi Rd, Perinjanam, Thrissur.",
+    "viewGallery": "View Full Gallery",
+    "cards": {
+      "front": {
+        "tag": "Clinic Front",
+        "title": "Main Clinic Entrance",
+        "sub": "Mathilakam Kakkathiruthi Rd, Perinjanam"
+      },
+      "reception": {
+        "tag": "Reception",
+        "title": "Patient Help & Registration",
+        "sub": "Warm, dedicated patient coordinators"
+      },
+      "lab": {
+        "tag": "Hi-Tech Lab Lobby",
+        "title": "Lab & ECG Waiting Hall",
+        "sub": "Computerised lab & relaxing aquarium"
+      },
+      "consultation": {
+        "tag": "Consultation",
+        "title": "Specialist Waiting Lounge",
+        "sub": "Physiotherapy & medical certifications"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Patient Testimonials",
+    "title": "Words of Gratitude & Patient Reviews",
+    "subtitle": "Real experiences and feedback shared by patients on our clinical excellence and healthcare services.",
+    "reviewsCount": "192 reviews on Google",
+    "googleProfile": "Google Profile",
+    "googleReviewTag": "Google Review",
+    "ownerResponseLabel": "Response from the owner",
+    "verified": "Verified Experience"
+  },
   "about": {
+    "pageBadge": "Hospital History",
     "title": "Astra Medical Center & Diagnostics, Perinjanam",
     "subtitle": "Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine — Perinjanam, Thrissur, Kerala",
+    "heading": "Trusted Healthcare Center in Perinjanam, Thrissur",
     "intro": "Astra Medical Center & Diagnostics is a trusted, comprehensive healthcare center located at Perinjanam, Thrissur, Kerala, committed to delivering quality, compassionate, and accessible healthcare for individuals and families. Our center brings together General Consultation, Family Physician Services, Specialized Diabetes Care, Advanced Laboratory Diagnostics, Preventive Pediatric Services, and a State-of-the-Art Day Care Center under one roof.",
+    "highlightDesc": "Empowering lives through quality healthcare. Astra Medical Center & Diagnostics brings together General Consultation, Family Physician Services, Specialized Diabetes Care (Astra Diabetic Foundation), Advanced Laboratory Diagnostics, Preventive Pediatrics, and a State-of-the-Art Day Care Center under one roof.",
+    "visionBadge": "Our Vision",
+    "missionBadge": "Our Mission",
     "missionTitle": "Our Mission",
     "mission": "To empower individuals and families through accessible, affordable, and quality healthcare, combining medical expertise, modern diagnostic technology, preventive medicine, and compassionate patient care.",
     "visionTitle": "Our Vision & Motto",
     "vision": "Empowering Lives Through Quality Healthcare — Your Health. Our Priority.",
-    "whyUsTitle": "Why Trusted Patients Choose Astra",
-    "timelineTitle": "Our Scientific Journey",
+    "whyUsTitle": "Why Choose Astra Medical Center?",
+    "whyUsSub": "Our core values are engineered around patient safety, diagnostic integrity, and dedicated doctor advisory.",
+    "values": [
+      {
+        "title": "Clinical Accuracy",
+        "desc": "All diagnostic samples and clinical profiles are peer-reviewed under strict standards of medical excellence."
+      },
+      {
+        "title": "Patient Empathy",
+        "desc": "Guided by our motto 'Your Health. Our Priority.', we deliver quality, compassionate, and accessible healthcare for individuals and families."
+      },
+      {
+        "title": "Senior Expertise",
+        "desc": "Led by Dr. Rajesh Wilson (16+ years experience) with senior UK and USA diabetes and clinical consultation fellowships."
+      },
+      {
+        "title": "Rapid Diagnostics",
+        "desc": "Fully automated biochemistry and pathology analyzer desks ensure results are ready and communicated within hours."
+      }
+    ],
+    "timelineTitle": "Our Journey of Healthcare Excellence",
+    "timelineSub": "A decade of clinical milestones and persistent commitments to general practitioner wellness.",
     "milestones": [
       {
         "year": "2010",
@@ -133,9 +230,69 @@
         "title": "Modern Expansion",
         "desc": "Launching an elegant digital ecosystem and expanding advanced diagnostics and cardiovascular checkup lines."
       }
+    ],
+    "facilityBadge": "Facility & Accessibility",
+    "facilityTitle": "Patient-Centric Infrastructure & Inclusivity",
+    "plusCodeLabel": "Perinjanam (Plus Code: 848W+2V Perinjanam, Keralam, India)",
+    "exteriorTag": "Exterior Entrance",
+    "exteriorSub": "Mathilakam Kakkathiruthi Rd, Perinjanam",
+    "labTag": "Laboratory & Lobby",
+    "labSub": "Hi-Tech Computerised Diagnostic Corridor",
+    "infraFeatures": [
+      {
+        "title": "Wheelchair Accessible",
+        "desc": "Dedicated ramp entrance, parking spaces, and fully accessible consultation seating."
+      },
+      {
+        "title": "Women-Owned",
+        "desc": "Proudly recognized and operated with empathetic, patient-first clinical leadership."
+      },
+      {
+        "title": "Inclusive Space",
+        "desc": "Warm, welcoming, and safe healthcare environment for all members of the community."
+      },
+      {
+        "title": "Extended Hours",
+        "desc": "Open from 6:30 AM weekdays and 7:00 AM on Sundays for prompt fasting samples."
+      }
     ]
   },
+  "team": {
+    "badge": "Specialist Board",
+    "title": "Our Medical Directorate",
+    "subtitle": "Led by senior clinicians committed to premium diagnostics, diabetes therapy, and dedicated general practice.",
+    "roleTag": "Senior Diabetologist",
+    "timingsHeading": "Consultation Timings",
+    "timings": [
+      {
+        "day": "Monday - Friday",
+        "hours": "09:00 AM - 01:00 PM, 04:30 PM - 08:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "09:00 AM - 01:00 PM, 04:30 PM - 07:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "09:00 AM - 01:00 PM (Emergency Desk Only)"
+      }
+    ],
+    "directorHeading": "Clinical Director & Chief Consultant",
+    "directorBio2": "Dr. Rajesh Wilson leads the clinical protocols at Astra Medical Center & Diagnostics. Under his supervision, all patient diagnostics and diabetology check panels adhere strictly to international standards, incorporating high-accuracy laboratory screenings and custom insulin advisory matrices.",
+    "qualificationsHeading": "Qualifications & Accreditation",
+    "quals": {
+      "mbbs": "Bachelor of Medicine, Bachelor of Surgery",
+      "md": "Doctor of Medicine (General Practice)"
+    },
+    "expCardTitle": "General Practitioner & Diabetologist",
+    "expCardDesc": "Clinical directorate with 16 years of dedicated general medical practice.",
+    "ctaHeading": "Request a Specialist Consultation",
+    "ctaSub": "Consult with Dr. Rajesh Wilson for metabolic profiling, thyroid monitoring, or customized insulin management protocols.",
+    "callSupport": "Call Support: 8089233554 / 7092030885",
+    "emailDesk": "Email Desk: astramedlabs@gmail.com"
+  },
   "contact": {
+    "badge": "Secure & Encrypted",
     "title": "Connect With Astra",
     "subtitle": "Reach out to our clinical coordinators. Schedule your consultations seamlessly.",
     "formTitle": "Secure Consultation Request",
@@ -145,6 +302,12 @@
     "formService": "Select Clinical Department",
     "formMsg": "Message / Clinical History",
     "formSubmit": "Submit Inquiry",
+    "formErrorRequired": "Please fill in Name, Phone Number, and select a Clinical Department.",
+    "formSuccessTitle": "Inquiry Sent Successfully!",
+    "formSuccessMsg": "Your request has been dispatched to Astra Medical Center (+91 80892 33554). Our clinical coordinator will respond shortly.",
+    "sendWhatsApp": "Send via WhatsApp",
+    "sendEmail": "Send via Email",
+    "directDesk": "Direct Coordinator Desk:",
     "formSending": "Verifying & Transmitting...",
     "formSuccess": "Your inquiry has been successfully transmitted. A clinical coordinator will contact you shortly.",
     "formError": "An error occurred. Please call our support lines directly.",
@@ -152,18 +315,34 @@
     "cardEmail": "Electronic Correspondence",
     "cardAddress": "Physical Location",
     "addressValue": "Mathilakam Kakkathiruthi Rd, Perinjanam, Kerala 680686",
+    "plusCode": "Plus Code: 848W+2V Perinjanam, Keralam, India",
     "hours": "Operating Hours",
     "hoursWeekdays": "Monday - Saturday: 6:30 AM - 7:30 PM",
-    "hoursSunday": "Sunday: 7:00 AM - 4:00 PM"
+    "hoursSunday": "Sunday: 7:00 AM - 4:00 PM",
+    "mapHeading": "Physical Location & Driving Directions",
+    "mapSub": "Mathilakam Kakkathiruthi Rd, Perinjanam, Kerala 680686 • Plus Code: 848W+2V Perinjanam, Keralam, India",
+    "getDirections": "Get Directions",
+    "frontBadge": "Building Front View",
+    "frontTitle": "Look for Astra Medical Centre",
+    "frontDesc": "Easily recognizable green signboard on Mathilakam Kakkathiruthi Rd, Perinjanam with dedicated parking."
   },
   "instructions": {
+    "badge": "Clinical Advisory",
     "title": "Patient Instructions & FAQ",
     "subtitle": "Key medical protocols, pre-test guidelines, and clinical advisory lists to ensure accurate diagnostic values.",
+    "prepBadge": "Diagnostic Preparation",
     "guidelinesTitle": "Essential Pre-Test Guidelines",
+    "guidelineTitles": [
+      "Fasting Blood Sugar (FBS)",
+      "Lipid Profile Screening",
+      "Ultrasound Abdomen & Scan",
+      "Thyroid Vitals Screen"
+    ],
     "guideline1": "Fasting Blood Sugar (FBS): Requires exactly 8-10 hours of overnight water-only fasting before blood draw.",
     "guideline2": "Lipid Profile Screen: Requires 12 hours of absolute fasting. Strictly avoid alcohol or high-fat meals 24 hours prior.",
     "guideline3": "Ultrasound Abdomen: Drink 4-6 glasses of water 1 hour prior to scan; do not void urine. Keep full bladder.",
     "guideline4": "Thyroid Profile: Take routine thyroid medication only AFTER the blood draw, unless advised otherwise by Dr. Wilson.",
+    "infoDeskBadge": "Information Desk",
     "faqTitle": "Frequently Asked Questions",
     "faqs": [
       {
@@ -182,15 +361,68 @@
         "q": "Do you offer emergency home sample collection?",
         "a": "Absolutely. For geriatric or fragile patients in local vicinities, our fully equipped mobile phlebotomy team can collect blood and urine samples directly from home."
       }
-    ]
+    ],
+    "bannerTitle": "Have a special diagnostic preparation query?",
+    "bannerSub": "Reach out directly to Astra Medical desk at 8089233554 or 7092030885. A qualified coordinator will guide you.",
+    "callCoordinator": "Call Coordinator"
   },
   "gallery": {
+    "badge": "Astra Visual Tour",
     "title": "Astra Clinical Gallery",
-    "subtitle": "A visual showcase of our state-of-the-art diagnostic facilities, clinical suites, and patient relaxation lounges.",
+    "subtitle": "Real photos of Astra Medical Center & Diagnostics in Perinjanam, Thrissur — featuring our modern front entrance, patient reception, consultation waiting lounge, and hi-tech laboratory corridor.",
     "filterAll": "All Views",
-    "filterDiagnostics": "Diagnostics",
-    "filterLabs": "Laboratory",
+    "filterEntrance": "Entrance & Reception",
+    "filterLabs": "Laboratory & Lobby",
+    "filterDiagnostics": "Consultation & Waiting",
     "filterSuites": "Clinical Suites",
-    "hoverZoom": "Expand Image View"
+    "hoverZoom": "Expand Image View",
+    "tourLabel": "Astra Medical Center & Diagnostics, Perinjanam",
+    "visitHeading": "Visit Us in Person at Perinjanam",
+    "visitAddress": "Mathilakam Kakkathiruthi Rd, Perinjanam, Thrissur, Kerala 680686",
+    "visitCta": "Get Directions & Visit",
+    "items": [
+      {
+        "title": "Clinic Front Entrance & Exterior",
+        "desc": "Main entrance and dedicated patient access with official clinical signage on Mathilakam Kakkathiruthi Rd, Perinjanam."
+      },
+      {
+        "title": "Patient Registration & Reception Desk",
+        "desc": "Welcoming reception counter for immediate patient registration, inquiry triage, and appointment booking."
+      },
+      {
+        "title": "Hi-Tech Computerised Lab & ECG Waiting Area",
+        "desc": "Air-conditioned central corridor featuring computerised laboratory counters, 12-channel ECG, and patient seating."
+      },
+      {
+        "title": "Physiotherapy & Consultation Waiting Lounge",
+        "desc": "Dedicated waiting area for specialist consultations, featuring clinical credentials, AHA certifications, and health advisories."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Comprehensive Healthcare | Diabetes Care | Diagnostics | Family Medicine — Perinjanam, Thrissur, Kerala.",
+    "portalTitle": "Clinical Portal",
+    "helpDeskTitle": "Help Desk",
+    "timingsTitle": "Clinic Timings",
+    "monSat": "Mon – Sat",
+    "monSatHours": "06:30 AM – 07:30 PM",
+    "sunday": "Sunday",
+    "sundayHours": "07:00 AM – 04:00 PM",
+    "deskTitle": "Astra Desk",
+    "plusCode": "Plus Code: 848W+2V Perinjanam, Keralam, India",
+    "copyright": "Astra Medical Center & Diagnostics. All rights reserved.",
+    "policy": "Patient Policy",
+    "triage": "Emergency Triage"
+  },
+  "floating": {
+    "whatsappTooltip": "WhatsApp Desk",
+    "callDesk": "Call Desk"
+  },
+  "mobileDock": {
+    "home": "Home",
+    "services": "Services",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "book": "Book"
   }
 }
